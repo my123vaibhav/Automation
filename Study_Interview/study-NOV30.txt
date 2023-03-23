@@ -1,0 +1,106 @@
+num = int(input("Enter the number :"))
+p = 1
+for i in range(2,num):
+    if num % i == 0:
+        p = 0
+        break
+if p == 1:
+    print("This is prime number",num)
+else:
+    print("This is not a prime number",num)
+--------------------
+li = [2, 34, 5, 6, 2, 7, 2, 7, 5, 4, 9, 0, 1]
+eli = []
+for i in li:
+    if i not in eli:
+        eli.append(i)
+
+print(eli)
+
+
+--------------
+li = [2, 34, 5, 6, 2, 7, 2, 7, 5, 4, 9, 0, 1]
+eli = []
+for i in li:
+    if i%2 == 0:
+        print("This is even number :",i)
+    else:
+        print("This is odd number :",i)
+
+
+---------------
+input_ch = input("Enter the char :")
+li = ['a', 'e', 'i', 'o', 'u']
+flag = False
+for i in li:
+    if i == input_ch:
+        flag = True
+
+if flag:
+    print("This is vowels :", input_ch)
+else:
+    print("This is not vowels :", input_ch)
+-----------------------
+num = int(input("Enter the number :"))
+
+res = 0
+rev = 0
+ldigit = len(str(num))
+
+while num > 0:
+    res = num % 10
+    rev = rev + (res ** ldigit)
+    num = int(num / 10)
+print(rev)
+------------------
+num = int(input("Enter the number :"))
+
+res = 0
+rem = 0
+ldigit = len(str(num))
+
+while num > 0:
+    res = num % 10
+    rem = res + (rem*10)
+    num = int(num / 10)
+print(rem)
+----------------------------
+li = [2, 4, 1, 6, 4, 7, 33, 22, 11, 34, 8, 9]
+
+max = li[0]
+min = li[0]
+for i in li:
+    if i > max:
+        max = i
+print(max)
+
+for j in li:
+    if j > min:
+        min = i
+print(min)
+----------------------------
+li = ["abc.pdf", "xyz.txt", "aws.pdf", "rnm.png"]
+for i in li:
+    if i.endswith(".pdf"):
+        print(i)
+-------------------------
+str1 = "ram"
+s1 = set(str1)
+str2 = "shyam"
+s2 = set(str2)
+lst = s1 & s2
+print(lst)
+---------------------------
+st = "kkc skb rcb csk mi xip skb kkc nmn"
+li = st.split(" ")
+print(li)
+
+for i in range(len(li)):
+    count = 1
+    for j in range(i + 1, len(li)):
+        if li[i] == li[j]:
+            count = count + 1
+            li[j] = "-"
+    if count >= 1 and li[i] != "-":
+        print(li[i], count)
+--------------------

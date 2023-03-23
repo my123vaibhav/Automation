@@ -1,0 +1,65 @@
+requests----> 3rd party
+requests.get(url)
+requests.post(url,body)
+GET----> read data----> url
+POST----> create new data(payload--->json)
+    ---->payload ----> url,body
+
+PUT---> full update---url,body
+Patch---partial
+Delete---> payload delete --->url,body
+post---->
+payload={
+'id':'10',
+'name':'xyz',
+'city':'pune'
+}
+
+put
+payload={
+'id':'11',
+'name':'xzzz',
+'city':'mumbai'
+}
+
+patch
+
+payload={
+'id':'10',
+'name':'ram',
+'city':'pune'
+}
+
+d1
+del d1
+
+
+*** post----->put----webserver----new payload create on server
+
+if payload is available--->update
+if payload is not available--->new
+
+
+dalete---> all delete or only partial data delete??
+
+
+python handle json
+dict--->key : value ---key--immutable ---> unhashable
+
+
+json---->'key':'value'
+serielisation---->
+deseri--->
+
+jsons.loads(resp)----> json data to python data(dict)
+json.dumps(resp)----> python data(dict) to json
+
+performace---> time >2---> failed
+status code----> imp
+response
+
+Facebook ----> window,mobile,broswer
+
+API ----> application programming interface
+
+RESTAPI----> frontend and database

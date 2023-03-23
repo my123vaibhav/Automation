@@ -1,0 +1,95 @@
+pytest----> 3rd library
+all features unittest+grouping,fixtures+parameterization
+
+pip install pytest ---->
+2nd ways---> setting--plugin
+import pytest
+
+python -m pytest
+test_* or *_test ---> name of module--.py
+test_* or *_test ---> def m1()
+
+
+in pytest---> no class ----POM
+def test_m1():
+
+terminals----> testcase
+
+@pytest.fixture----> setup
+
+pytest module_name----> all the test
+
+@pytest.mark.groupname---->
+
+pytest -m groupname ---->
+
+pytest -k test_modul::test_name
+
+-v verbose
+-s to print staments
+
+pytest -v test_login.py
+pytest -v -s test_login.py
+
+userdefine---->
+
+userdata=[('admin','pass',invalid),('admin1','pass1',valid)]
+Manual engineer
+
+@pytest.mark.parametrize('username','password','msg',user_data)
+def test_valid(username,password,msg):
+
+    assert 'valid'==msg
+
+
+10 commands--->
+pytest --fixtures ----> available fixtures
+pytest -h ----> help
+pytest -x ----> stop after 1 TC fail
+pytest -maxfail=n ----> stop at n fail
+pytest modulename.py
+pytest -s -v module.py
+pytest -k module.test_name
+pytest -rA ---> text summary on terminal
+        r---> report
+        A---> all
+pytest -rfs  ----> failed and skip can be seen
+        r ----> report
+        f ---> failed
+        A -----> all
+pytest -s ----> all the capturing on terminal
+pytest -E ----> make a marker before running
+
+pytest -s -v module_name --html=pwd/report.html --self-contained-html
+
+
+
+
+loggers---->
+pdb
+pdb.set_trace()
+n
+s
+d
+u
+
+
+setup()
+facebook/login
+tc1
+username
+pass
+teardwon----->
+
+tc2
+dashboard
+locate ----->elementnotfound
+
+
+git ---->
+master-----> requirement.txt
+pip install requirement.txt
+
+pip freeze
+
+

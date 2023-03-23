@@ -1,0 +1,60 @@
+Impl and exp----> wait--->
+delay---->
+delay< timeout
+GET---->    /delay/{5}
+DELETE--->  /delay/{5}
+POST---->  /delay/{5}
+PUT---->   /delay/{5}
+PATCH--->  /delay/{5}
+
+
+UI----> in url ---> user and pass
+    'www.username:password@url.com'
+https://username:password@the-internet.herokuapp.com/
+
+
+
+auth=(username,password)
+
+WEB application---->
+GET---->
+
+DELETE----> 2 conditon
+Payload is Present
+Payload is not present ----> Server 5xx   1xx or 2xx
+        if GET sucess---->DELETE
+        if not sucess--->
+                1st POST ---->GET --->DELETE
+
+POST----> 2 conditon
+Payload is Present ----> NO post
+        GET---200 ---> No post
+Payload is not present
+        if not resp from GET----> Post
+
+PUT----> 2 conditon
+Payload is Present
+            GET---> dict operations ---> Full Update
+Payload is not present
+        GET---> Not 200
+        any two methods---->POST 201 or PUT 201
+
+Patch----> 2 conditon
+Payload is Present ----> partial update
+Payload is not present--->??
+    GET not 200
+    any two methods---->POST 201 or PUT 201
+        then PATCH
+
+
+UI API Testing
+
+
+
+Manual Testing----> POSTMAN
+        status code
+        respo
+        payload
+
+
+Project ---->

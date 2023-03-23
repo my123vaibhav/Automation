@@ -1,0 +1,94 @@
+2 framework----
+unittest or pytest -----> integration for all framework
+import unittest -------->
+import pytest ------>
+pytest,unitest----> OS----> linux
+*** working people---->**
+
+__name__ -----> present modulename in python
+name==main ----> current module execute
+other module name==modulename
+
+if __name__ == '__main__' :
+    current module code
+
+__init__.py -----> interpreted--->compiler
+
+unittest ----->inbuild framework
+import unittest
+unitest.TestCase -----> class
+    D/I-----> unittest
+
+test case name unittest-----> aplh
+
+assert statement---->actual expected
+assertequal() ---->pass
+assertnotequal() ----> pass
+
+defect----> developer
+fixtures in unittest and pytest---->
+
+UI testing----->
+setup--->open brower
+testcases
+teardown---->close brower,quite
+
+database testing----->
+setup--->connection to data
+testcases
+teardown---->connection close
+data driver testing/keyword driven----->
+setup--->file-->woorkbook--->sheets--->row--->cell
+testcases ----> samplefile.writeadd()
+teardown---->save()
+
+API testing
+setup---> r=request.get()
+testcases----> v=r.response
+            assertequal(v,200)
+teardown---->
+
+samplefile----> 4 functions
+maxrow,maxcolumn,read,write
+
+
+fixtures----> setup(prerequist) and cleanup activity
+setup(self)
+teardown(self)
+@classmethod
+setUpClass(cls)
+@classmethod
+tearDownClass(cls)
+
+
+skip---->
+@unittest.skip ----> decorator ---> perticular tc will skip
+
+
+
+Ok
+failure
+error
+
+
+
+1 display our result on console we can our result in log file
+2 all the Case will be execute based on Aplhabical
+3 as part of batch(testsuit,job) execution, all the tc from testcase class will be execute
+4 if tc name is same----> python support---> only recent tc
+    method overloading----> in same class method name same
+5 fixture---> 4method---> setup,teardown,setupclass,teardownclass
+6 grouping TC---is not supported in Unittest
+
+Test Suit--->Unittest
+suit ---> collection of all the tc
+Master suit--->(700+)---->all tc type
+stable master suite------> 90 %   10%---> payment,bar,scanner,rect or angular
+                            proctator tool----> agular js,react
+
+5 tc---->
+failed at 3??
+
+
+
+
