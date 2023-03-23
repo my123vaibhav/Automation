@@ -1,0 +1,587 @@
+1.How to work range function ?
+num = 6
+for i in range(num):  # range start with 0 and end with num-1.
+    print(i)
+------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+0
+1
+2
+3
+4
+5
+
+Process finished with exit code 0
+----------------C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+0
+1
+2
+3
+4
+5
+
+Process finished with exit code 0
+-----------------------------------------------------
+2.How to print the same think by adding 1 in range function:
+num = 6
+for i in range(1,num+1):  # range start with 0 and end with num-1.
+    print(i)
+------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+1
+2
+3
+4
+5
+6
+
+Process finished with exit code 0
+---------------------------------------------------------
+
+Patter1:
+num = int(input("Enter any number: "))
+for i in range(num):  # range start with 0 and end with num-1.
+    for j in range(1,i+1):
+        print(i,end="")
+    print("")
+----------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter any number: 6
+
+1
+22
+333
+4444
+55555
+
+Process finished with exit code 0
+
+------------------------------------------------------
+Q.Let’s see how to print the following half pyramid pattern of numbers?
+num = int(input("Enter any number: "))
+for i in range(num):  # range start with 0 and end with num-1.
+    for j in range(1,i+1):
+        print(j,end="")
+    print("")
+
+--------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter any number: 6
+
+1
+12
+123
+1234
+12345
+
+Process finished with exit code 0
+---------------------------------
+Q.Inverted pyramid pattern of numbers
+num = int(input("Enter any number: "))
+for i in range(1,num+1):  # range start with 0 and end with num-1.
+    for j in range(num-i):
+        print(i,end="")
+    print("")
+----------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter any number: 6
+11111
+2222
+333
+44
+5
+
+
+Process finished with exit code 0
+---------------------------------
+Inverted Pyramid pattern with the same digit
+num = int(input("Enter the number :"))
+for i in range(1,num+1):
+    for j in range(num-i):
+        print(num, end="")
+    print("")
+------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number :5
+5555
+555
+55
+5
+
+
+Process finished with exit code 0
+---------------------------------
+Another inverted half pyramid pattern with number
+num = int(input("Enter the number :"))
+for i in range(num):
+    for j in range(num-i):
+        print(j, end="")
+    print("")
+   
+----------------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number :6
+012345
+01234
+0123
+012
+01
+0
+
+Process finished with exit code 0
+---------------------------------
+Q. Alternate numbers pattern using for loop
+num = int(input("Enter the number :"))
+for i in range(1, num + 1):
+    for j in range(1, i + 1):
+        if i % 2 != 0:
+            print(i, end="")
+    print("")
+
+-----
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number :5
+1
+
+333
+
+55555
+
+Process finished with exit code 0
+---------------------------------
+Reverse number pattern
+num = int(input("Enter the number :"))
+for i in range(1,num+1):
+    for j in range(num-i):
+        print(num-i,end="")
+    print("")
+
+-----------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number :6
+55555
+4444
+333
+22
+1
+
+
+Process finished with exit code 0
+---------------------------------
+Reverse Pyramid of Numbers
+num = int(input("Enter the number :"))
+for i in range(num):
+    for j in range(i+1):
+        print(i+1-j,end="")
+    print("")
+
+----------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number :6
+1
+21
+321
+4321
+54321
+654321
+
+Process finished with exit code 0
+---------------------------------
+Another reverse number pattern
+num = int(input("Enter the number :"))
+for i in range(num):
+    for j in range(num-i):
+        print(num-j,end="")
+    print("")
+
+--------------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number :5
+54321
+5432
+543
+54
+5
+
+Process finished with exit code 0
+
+---------------------------------
+Pattern - 1: Simple pyramid pattern
+n = int(input("Enter the number of rows :"))
+for i in range(n):
+    for j in range(i+1):
+        print("*",end="")
+    print("")
+
+
+------------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number of rows :5
+*
+**
+***
+****
+*****
+
+Process finished with exit code 0
+---------------------------------
+Pattren - 2:To print square pattern with * symbols
+n = int(input("Enter the number of rows :"))
+for i in range(n):
+    print("* " * n)
+
+
+--------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number of rows :3
+* * * 
+* * * 
+* * * 
+
+Process finished with exit code 0
+---------------------------------
+Pattren - 3: square pattern with provided fixed digit
+n = int(input("Enter the number of rows :"))
+for i in range(n):
+    print((str(n)+" ") * n)
+
+
+---------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number of rows :4
+4 4 4 4 
+4 4 4 4 
+4 4 4 4 
+4 4 4 4 
+
+Process finished with exit code 0
+----------------------------------
+Pattren - 4:square pattern with provided fixed digit in every row:
+n = int(input("Enter the number of rows :"))
+for i in range(n):
+    print((str(i)+" ") * n)
+
+
+------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number of rows :4
+0 0 0 0 
+1 1 1 1 
+2 2 2 2 
+3 3 3 3 
+
+Process finished with exit code 0
+---------------------------------
+Pattren - 5: || To print square pattern with fixed alphabet symbol
+n = int(input("Enter the number of rows :"))
+for i in range(n):
+    print((str('A')+" ") * n)
+
+
+----------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number of rows :4
+A A A A 
+A A A A 
+A A A A 
+A A A A 
+
+Process finished with exit code 0
+----------------------------------
+15: Right Angle Triangle pattern with fixed alphabet symbol
+n = int(input("Enter the number of rows :"))
+for i in range(n):
+    print((chr(65+i)+" ") * (i+1))
+
+
+----------------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number of rows :5
+A 
+B B 
+C C C 
+D D D D 
+E E E E E 
+
+Process finished with exit code 0
+---------------------------------
+Pattern -20: Inverted Right Angle Triangle pattern with * symbols
+n = int(input("Enter the number of rows :"))
+for i in range(n):
+    print((str('*')+" ") * (n-i))
+
+
+-----------------------------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number of rows :5
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+Process finished with exit code 0
+----------------------------------
+ Pattern -30: To print Pyramid pattern with fixed digit in every row
+n = int(input("Enter the number of rows :"))
+for i in range(n):
+    print(' '*(n-i-1)+(str(i+1)+' ')*(i+1))
+
+
+------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number of rows :5
+    1 
+   2 2 
+  3 3 3 
+ 4 4 4 4 
+5 5 5 5 5 
+
+Process finished with exit code 0
+----------------------------------------
+n = int(input("Enter the number of rows :"))
+for i in range(n):
+    print(' '*(n-i-1),end='')
+    for j in range(i+1):
+        print(chr(64+n-j),end=' ')
+    print()
+
+------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number of rows :4
+   D 
+  D C 
+ D C B 
+D C B A 
+
+Process finished with exit code 0
+---------------------------------
+Right Half Diamond Pattern with alphabet symbols in dictionary order
+n = int(input("Enter the number of rows :"))
+for i in range(n):
+    for j in range(i+1):
+        print(chr(65+j),end=' ')
+    print()
+for i in range(n-1):
+    for j in range(n-1-i):
+        print(chr(65+j),end=' ')
+    print()
+------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number of rows :4
+A 
+A B 
+A B C 
+A B C D 
+A B C 
+A B 
+A 
+
+Process finished with exit code 0
+-------------------------------
+To print Inverted Pyramid Pattern with alphabet symbols in dictionary order
+n = int(input("Enter the number of rows :"))
+for i in range(n):
+    print(' ' * i,end='')
+    for j in range(n - i):
+        print(chr(65 + j), end=" ")
+    print()
+-----------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Enter the number of rows :4
+A B C D 
+ A B C 
+  A B 
+   A 
+
+Process finished with exit code 0
+---------------------------------------
+Q2. Write a Program To REVERSE content of the given String by using reversed function
+s = "durga"
+print("Before convert the string is :",s)
+r = reversed(s)
+output = ''.join(r)
+print("After convert the string is :",output)
+---------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Before convert the string is : durga
+After convert the string is : agrud
+
+Process finished with exit code 0
+----------------------------------
+Q3. Write a Program To REVERSE content of the given String by using while loop
+s = "durga"
+print("Before convert the string is :", s)
+output = ""
+i = len(s) - 1
+while i >= 0:
+    output = output + s[i]
+    i = i - 1
+print("After convert the string is :",output)
+-------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Before convert the string is : durga
+After convert the string is : agrud
+
+Process finished with exit code 0
+---------------------------------
+Q4. Write a Program To REVERSE order of words present in the given string
+words = "Nishant Narwade Nanded"
+print("Before convert the string is :", words)
+
+li = words.split()
+reli = li[::-1]
+revWord = ' '.join(reli)
+print("After convert the string is :", revWord)
+
+--------------------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Before convert the string is : Nishant Narwade Nanded
+After convert the string is : Nanded Narwade Nishant
+
+Process finished with exit code 0
+---------------------------------
+ Q5. Write a Program To REVERSE internal content of each word?
+words = "Nishant Narwade Nanded"
+print("Before convert the string is :", words)
+
+li = words.split()
+empt = []
+for i in li:
+    empt.append(i[::-1])
+output = ' '.join(empt)
+print("After convert the string is :", output)
+
+------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Before convert the string is : Nishant Narwade Nanded
+After convert the string is : tnahsiN edawraN dednaN
+
+Process finished with exit code 0
+---------------------------------
+Q6. Write a Program To REVERSE internal content of every second word present in the given string?
+words = "one two three four five six"
+print("Before convert the string is :", words)
+li = words.split()
+print(li)
+emptarr = []
+for i in range(len(li)):
+    if i % 2 == 0:
+        emptarr.append(li[i])
+    else:
+        emptarr.append(li[i][::-1])
+
+output = ' '.join(emptarr)
+print("After convert the string is :", output)
+-------------------------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Before convert the string is : one two three four five six
+['one', 'two', 'three', 'four', 'five', 'six']
+After convert the string is : one owt three ruof five xis
+
+Process finished with exit code 0
+---------------------------------
+Q7. This is wrong program ,need to change the code Wrt Prog to print the characters present at even index and odd index?
+words = "Nishant"
+
+print("Char print for EVEN index")
+for i in range(0,len(words)):
+    print(words[i])
+    i = i + 2
+
+print("Char print for ODD index")
+for j in range(1, len(words)):
+    print(words[j])
+    j = j + 2
+------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Char print for EVEN index
+N
+i
+s
+h
+a
+n
+t
+Char print for ODD index
+i
+s
+h
+a
+n
+t
+
+Process finished with exit code 0
+--------------------------------
+Q8. Wrt a prog to merge characters of 2 strings into a single string by taking characters altern
+s1 = "Nishant"
+s2 = "bablu"
+output = ''
+i, j = 0, 0
+while i < len(s1) or j < len(s2):
+    if i < len(s1):
+        output = output + s1[i]
+        i = i + 1
+
+    if j < len(s2):
+        output = output + s2[j]
+        j = j + 1
+
+print(output)
+--------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+Nbiasbhlaunt
+
+Process finished with exit code 0
+----------------------------------
+Q9. Program to sort characters of the string, first alphabet symbols followed by digits
+ip = 'B4A2D3'
+print("This is input :",ip)
+alphabets = []
+digit = []
+for i in ip:
+    if i.isalpha():
+        alphabets.append(i)
+    else:
+        digit.append(i)
+
+output = ''.join(sorted(alphabets)+sorted(digit))
+print("This is expected output :",output)
+----------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+This is input : B4A2D3
+This is expected output : ABD234
+
+Process finished with exit code 0
+-----------------------------------
+ Q10 .Program for the requirement,input: a4b3c2 and expected output: aaaabbbcc
+s = 'A4B3C4D7'
+output = ''
+for ch in s:
+    if ch.isalpha():
+        x = ch
+    else:
+        di = int(ch)
+        output = output + x * di
+
+print(output)
+---------------
+C:\Python39\python.exe D:/PythonHBF-NOV29/simple_Script/interview_Progran.py
+AAAABBBCCCCDDDDDDD
+
+Process finished with exit code 0
+---------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
