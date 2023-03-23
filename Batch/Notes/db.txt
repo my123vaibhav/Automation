@@ -1,0 +1,145 @@
+
+what is DBMS and RDBMS
+what sql
+
+schema and database and tables
+
+Install Mysql ---->
+2 installation
+	CLI and GUI----workbench
+
+DBMS----> database management system eg---> dbase,foxpro etc...
+database----> data storage area
+	tables,tree,doct
+if we store our data inside table------>RDBMS
+
+Rdatabase---->sql
+
+Install mysql ---->
+
+port of msql------>3306
+
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin
+
+
+mysql -u root -p
+password-
+
+mysql --version---->
+	mysql  Ver 8.0.31
+	mysql 8.x
+
+
+SQL---->CRUD
+
+DDL--- data defination language ---- define   C
+	create,alter,drop,truncate,rename
+
+DML--- data manipulation lanag ---- operations UD
+	insert,update,delete	
+
+DQL--- data query lang                 R
+	retrive----> select
+
+TCL--- transaction control lang
+	rollback, commit,save point
+
+DCL--- data control language
+	Grant,revoke
+adharcard no----> unique+not null
+lience no----> unique + not null
+
+
+Basic SQL commands---->
+
+select -----> select all data(RC) from database(tables)---->read
+from	----> specific tables read data
+where  ---> condition data read
+as    -----> alias--->rename
+join  -----> 2 or more tables
+and   ----> 2 combine ----> T and T--->T
+or    ----> 2com      ----> T or F----> T
+limit ----->limit rows ********              
+in   ----> values check 
+is null -----> null ----> keys----> primary(not null + unique),fore,unique
+like ----> search the spe pattern from col
+commit ----> op save
+rollback ----> op undo
+alter ----> add/remove col from tables
+update ----> update data inside table
+create -----> create table or create database
+delete------> delete row from table------> where 
+insert ----> insert the rows inside table
+drop -------> without condition -----> drop table tablename;
+group by -----> groups
+oder by ----> desc, asc
+having -----> pattern based checked
+count ----> number rows
+sum   ----> sum of rows
+avg   ----> avg of rows
+min   ----->min from row
+max   ---->max from row
+
+
+select *from tablename; ------> all data from table
+
+select firstname from tablename;
+
+import pymysql
+import mysql-connector
+import cx_Oracle
+
+
+delete ----> where delete perticular row---- delete from table_name;
+drop    ------> table drop ---> structure+rows deleted
+truncate------> data is there only data(row) is deleted
+	----> strcture is there
+
+create
+read
+update
+delete
+where
+
+database se insert to the automatio tc ------>DDF
+
+
+table---->35+
+
+python to database----->
+remaing topics---->
+
+
+1 import database module-----> pymysql/mysql-connector / cx_oracle
+2 connect1=pysql.connect(host=,username=,password=,database=) ----> 4parameter
+setup()---> helper
+instance setup
+class setup
+
+3 cursor1=connect1.cursor()
+4 excute(),excutestript(),excutemany()
+5 commit() or rollback()
+6 fetchone(),fetchall(),fetchmany(n)
+ assert in=fet;    -------> validate/varify database----> testing
+
+7 cursor.close()
+connect1.close()
+teardown() ----> helper
+instance teardown
+class teardown
+
+
+python ----> all
+selenium ------>UI
+testing---types
+sdlc,stlc,bug like cycle
+
+api
+database
+
+
+
+
+
+
