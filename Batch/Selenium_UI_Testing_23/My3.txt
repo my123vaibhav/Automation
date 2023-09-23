@@ -1,3 +1,48 @@
+driver=webdriver.Chrome()
+Commands in selenium---->
+1 application commands---> variables+methods
+    driver.get(url)
+    driver.title ----> title of web page
+    driver.current_url --->
+    driver.page_source ----> source code of webdriver--->browser
+
+2 Conditional Statements--->locators
+    locator.is_displayed()-----> True
+    locator.is_enabled() ---> taking input or not
+                ---> clicable
+    locator.is_selected()----> radio,checkbox,dropdown
+
+3 Browser commands--->
+driver.close() ----> single browser will close
+driver.quite() ----> open all browser will close
+submit() ---->enter from keyboard
+click()--->
+open browser---->
+automation
+
+4 Nevigation commands--->
+forword()----> next browser page
+back() ---> previous browser page
+refresh() ---> current page refere
+
+Waits--->***
+implicit wait--->sec
+    if the wait is given on browser---> webdriver
+    whole application for wait
+    all locator
+    driver.implicitly_wait(5)   # 5 sec
+
+explicit wait--->sec
+    percular element---->
+    EC
+    from selenium.webdriver.support.wait import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+
+    locator.until(EC.presence of element locator(By.))
+
+when you run automation context-----> automated webpage
+
+--------------------------------------
 
 import time
 from selenium import webdriver

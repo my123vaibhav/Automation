@@ -38,9 +38,8 @@ class resign_page:
 
 10---> 5min----> 10*5
 for finding the locators---> web element---> browser---> webdriver
-css selector
+SelectorHub
 chropath
-
 
 
 ** locators on browser--->
@@ -51,10 +50,8 @@ class ----> multiple on web browser
             list ---> li ul
             checkbox
             dropdown
-
 name ----->
             checkbox or radio button---> can be different
-
             input type='radio' name='physics'
             input type='radio' name='chem'
             input type='radio' name='math'
@@ -62,11 +59,9 @@ linktext
     ---> locator pe click---> new page open
     <a href=''>
     2 types--->
-        full linktext ----> text
-
+        1 full linktext ----> text
             Register
-
-        partial linktest ---> text
+        2 partial linktest ---> text
             Reg
             ister
 css--->
@@ -80,13 +75,12 @@ xpath-----> ****
     slow
     DOM---> document object model
 
-    abs xpath ----> full
+    1 abs xpath ----> full
     parent ---> start
     /
-
     /html/body/div[6]/div[2]/ul[1]/li[1]/a
 
-    relative xpath ---> partial
+    2 relative xpath ---> partial
     middle start
     //
     //button[normalize-space()='Search']
@@ -100,7 +94,6 @@ driver.find_elements_by_class('') ----> collection of elements---> list ---> lis
 
 selenium4---->
 from selenium.webdriver.common.by import By
-
 driver=webdrive.Chrome()
 driver.find_element(By.ID,'id of locator')
 driver.find_elements(By.CLASS,'class of locator')
@@ -128,3 +121,39 @@ locator.send_keys('input') ----> input to locator
 locator.click() ---->
 driver.current_url
 driver.title
+
+---------------------------------
+
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import chromedriver_autoinstaller
+chromedriver_autoinstaller.install()
+driver=webdriver.Chrome()
+driver.get('https://demo.nopcommerce.com/')
+driver.maximize_window()
+print('before click',driver.current_url)
+time.sleep(2)
+#driver.find_element(By.LINK_TEXT,'Register').click()
+driver.find_element(By.PARTIAL_LINK_TEXT,'Reg').click()
+time.sleep(3)
+driver.find_element(By.XPATH,'//h1[normalize-space()="Register"]')
+print('after click',driver.current_url)
+
+import sys
+sys.exit(0)
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import chromedriver_autoinstaller
+chromedriver_autoinstaller.install()
+
+obj=webdriver.Chrome()
+obj.get('https://demo.nopcommerce.com/')
+obj.maximize_window()
+
+time.sleep(4)
+search_obj=obj.find_element(By.ID,'small-searchterms')
+search_obj.send_keys('Lenovo')
+obj.find_element(By.XPATH,"//button[normalize-space()='Search']").click()
+time.sleep(2)

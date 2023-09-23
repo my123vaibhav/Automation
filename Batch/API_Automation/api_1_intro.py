@@ -47,18 +47,6 @@ assert resp.json()['job']=='leader'
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 import sys
 sys.exit(0)
 import requests
