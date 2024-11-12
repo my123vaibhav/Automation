@@ -1,0 +1,140 @@
+Automation---> 70-80% --->30-20% automation framework
+Tech--->python ??
+
+Selenium----> framework/ library---> collection modules(components)
+   modules----> def,class,variables etc objects
+we are using 4.x----> 3.x??
+   3rd party library---->
+   use any 3rd party---> we install
+
+   pip install selenium
+
+   pip install requirement.txt
+   requirement.txt  ----> 100+ li/packages
+
+Automation--->
+GUI/UI ----> Presentation layer
+API----> json ---> 'key':'value'
+DATBASE ----> relational db
+
+class----> methods and variables---> webdriver
+
+python script code automation--->Selenium----> AUT
+dict----> json
+2methods--->import json
+loads()----> json object to python object(dict)
+dumps()----> python object to json
+
+Webapplication---> selenium/django----> RR cycle
+
+
+webdriver----> browser---> class
+    Chrome,Firefox,IE,opera,safari
+webelements-----> locators
+    class----> methods+variable(locators)----> enchapsulation
+
+from selenium import webdriver
+
+100%---> Not perfomed
+    barcode--->No
+    captcha---> No
+    payment----> No
+
+
+Disadvances of Selenium??
+        desktop application ---> No---> sikuli
+
+
+        angular js ----> No---> proctractor
+        manitance----> hevey
+            locators---->
+            we go with locators---> correct
+        Image Automation and Video automation----> Not
+        captcha----> No
+        barcode---> No
+        scanner---> No
+
+
+we install selenium
+we check browser version???
+    browser ??
+    chrome ---> chromedriver
+    firefox---> geckodriver
+    IE
+
+    path inside script--->
+    newversion to old---->
+    selenium4 ---> selnium3
+        DeprecationWarining--->
+
+        python---->
+            python2--->dict un,rowinput(),print '' ,xrange()
+
+            python3 --->dict or,input(),print(),range()
+
+            chromedriver_autoinstaller
+
+
+            About Selenium | Selenium
+
+            webdriver.title
+
+Selenium---->
+    open source automation functional testing framework
+    Automation testing
+    for the browser testing we use selenium
+    selenium python binding provides the access to api
+    selenium api---> access to selenium webdriver(browser)
+        chrome,firefox,IE,safari,remote
+
+    All the type of web application---> automated with selenium
+    but Angular Js website----> selenium will not work
+                ----->used Protractor tool      ---> gs lab,calsoft,LT
+    but Desktop Application----> selenium2 --->
+                ---> sikuli
+    selemium--->
+
+Features of selenium--->
+    open source
+    portable
+    Combination of tools
+    Easy to understand---> but that we req langauge knw
+    Test execution is reduced by time-----> ??
+       script----> written time consuming
+                any time
+                any where
+
+    Test execution can be happen in paraller
+    supported multiple langauges---->
+            java,.net,c#,python
+    supports multiple OS--->win,ios,linux,mac
+    support multiple browser----> chrome,firefox,IE,etc
+
+Components of selenium---->
+
+1 Selenium IDE---> intergated developement env
+            ---> Tool
+            ----> Record and run the script
+            ---> every action will recorded and run the action
+            --->Only installed firefox
+            ---> by default record---> HTML
+                    ----> html to other language
+
+2 Selenium RC---> Remote Control
+        ---> only work with single browser but web server will open all browser
+        ---> selenium 1
+        ---> act as API
+
+
+3 Selenium GRID---> parallel execution
+                ---> max 5 browser at a time
+                ---> comparatability testing---->all the OS
+                ---> to save the execution time
+
+4 Selenium webdriver----> script
+                    advanced version of selemium RC
+5 SEKENDROID and APPIUM----> to mobile application
+
+
+
+

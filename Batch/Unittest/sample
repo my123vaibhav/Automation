@@ -1,0 +1,76 @@
+
+
+void main()------>
+
+__name__ ----> current module
+        ----> __main__
+        ----> perticular module
+unittest----> module
+        ---inbuild in python
+
+        varification(whitebox--unittest) and validation(blackbox---pytest)
+
+    SDLC ----> implementation phase---> unittest
+    LLD and HLD
+    testing--- developement
+    developement
+    agile method
+
+        testing---->
+            test_*.py -----> test suite
+
+            function--->pytest
+
+            methods----> unitest
+            class----> Test_*.py or *_test.py
+                    test_*.py or *_test.py
+
+                    test.TestCase----> inheritance
+                    no same in method name--->overloading is not support
+                    instance method--->self
+            4 imports---->
+                setUp(self)----> instance method
+                    before the tc
+                teardown(self)----> instance method
+                    after the tc
+                setupclass()
+                teardownclass()
+setup
+A
+B
+C
+D
+teardown
+
+    s-->A-->t
+    s-->B-->t
+    s-->c-->t
+    s--->D-->t
+
+setup(cls)
+A
+B
+C
+D
+teardown(cls)
+
+S--->A--->B-->C-->D-->t
+
+
+assertEqual(a,b)    ---> a==b
+assertNotEqual(a,b)  --->a!=b
+assertTrue(a)  -----> a is True   ----> >1
+assertFalse(a) ----> a is false
+            false---> 0,'',(),[],set(),{},False
+assertIs(a,b) ------> a is b
+assertIsNot(a,b) ---> a is not b
+assertNone(a) ----> a=None
+assertNotNone(a)---> a!=None
+
+assertIn(a,b) ---> a in b
+    1 in [1,2,3,4] ---> True
+assertNotIn(a,b) ---> a in b
+
+
+Test Suites----> collection of test case
+        packages----> __init__.py 

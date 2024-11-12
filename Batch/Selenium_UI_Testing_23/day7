@@ -1,0 +1,91 @@
+ActionChains(driver).click_and_hold(slider).move_by_offset(x , 0).release().perform()
+
+Automation framework ---->
+Mutliple windows handles in automation
+A page--->B page--->C page--->D page
+Parent--->A
+child1--->B
+child2--->c
+child3-->D
+
+context----> automation web page----> current web page
+driver.window_handles---->
+    list---> unique id of all the open windows
+    l=[id_a,id_b,id_c,id_d]
+    l[0] ---->parent window --->id_a
+    l[1:]----> all child window --->id_b,id_c,id_d
+driver.current_window_handle--->
+    unique id of current page
+    id_a
+    id_b
+    id_c
+    id_d
+driver.switch_to.window(windowId)---->
+    one to other window
+    context will switch provided id
+
+    list1=driver.window_handles    --->[id_a,id_b,id_c,id_d]
+    c_window=driver.current_window_handle     --->id_c
+
+
+    for i in list1:
+        if i==c_window:
+            driver.switch_to.window(id_c)
+            drive.find_element
+
+
+driver.close() ----> context---> single browser
+driver.quite() ----> all browser
+
+
+
+
+
+manual 3 browser
+automation 7 browser
+
+
+system----> 10
+driver.quite() ---->3
+
+driver.close() ---->9
+
+mouse or keyboard----> fail
+
+scanner
+barcode
+captcha
+
+
+
+can you share your screen and open any python ide---> dnt open your system ide
+
+online ide
+
+python is interepreted langauge
+ internally compiler
+.pyc
+.py
+ i---->com--->asse--->machine
+
+compiler????
+
+
+expection selenium --->5
+element not found
+element not present
+element not clickable
+element not display
+element not selected
+
+defect
+
+
+switch_to.alert
+switch_to.widown
+switch_to.iframe
+
+
+
+
+

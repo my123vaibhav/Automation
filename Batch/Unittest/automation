@@ -1,0 +1,37 @@
+
+roles and resp--->
+
+Identify the scenios---> what to test in application
+TC
+to all manual testcase----->  TestRail
+devloped the automation script----> python,selenium,unittest,pytest,mysql,request
+excution of test suite(collection of tc)
+defect reporting tool----> jira
+retesting and regression tc
+
+BRS----> confluence page----SDLC
+FRS
+
+test---> varification and validation---> actual and expected
+facebook---> login
+ts01---> login validation
+ts02---> signup validation
+ts03---> reset validation
+
+
+
+python
+selenium
+unittest
+pytest
+ddf      4 function  25line
+mf
+key-word f
+hybrid POM
+
+test suites---->
+
+postman
+testrail
+
+mysql  CRUD
