@@ -34,7 +34,6 @@ driver.send_keys('filepath.pdf')----> upload the file
 ** Mouse actions--->
 
 
-
 '''''
 
 import time
@@ -83,11 +82,6 @@ driver.maximize_window()
 time.sleep(30)
 
 
-
-
-
-
-
 import sys
 sys.exit(0)
 import time
@@ -114,7 +108,6 @@ time.sleep(3)
 
 
 
-
 import sys
 sys.exit(0)
 import time
@@ -123,26 +116,19 @@ from selenium.webdriver.common.by import By
 import chromedriver_autoinstaller
 chromedriver_autoinstaller.install()
 from selenium.webdriver.support.select import Select
-
 driver=webdriver.Chrome()
-
 driver.get('https://www.opencart.com/index.php?route=account/register')
 driver.maximize_window()
 drp_list=driver.find_element(By.XPATH,"//select[@id='input-country']")
 drp=Select(drp_list)    #dropdown ko active
 # 3 method to select the dropdown
 #select_by_visible_text('' )---> visible text on UI
-
 #drp.select_by_visible_text('China')
-
 #select_by_index() ---> 0 to len-1
-
 #drp.select_by_index(8)
 drp.select_by_value('100')
-
 time.sleep(2)
 driver.close()
-
 
 
 import sys
@@ -151,3 +137,28 @@ s=drp.options
 #print(len(s))
 for i in s:
     print(i)
+	
+---------
+#drop down
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import 
+By
+from selenium.webdriver.support.select 
+import Select
+import chromedriver_autoinstaller
+chromedriver_autoinstaller.install()
+driver=webdriver.Chrome()
+driver.get('https://fs2.formsite.com/mehe
+rpavan/form2/index.html?1537702596407')
+driver.maximize_window()
+element=driver.find_element(By.ID,'RESULT
+_RadioButton-9')
+drp=Select(element)
+#print(len(drp.options))
+#for i in drp.options:
+ #print(i.text)
+#drp.select_by_visible_text('Morning')
+#drp.select_by_index(2)
+#drp.select_by_value('Radio-2')
+time.sleep(5)
