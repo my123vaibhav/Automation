@@ -1,0 +1,2600 @@
+Taking the input from endusers
+
+To take input from end user 
+
+ex: input() function by default take the data in String format
+
+num1 = input("Enter first Number :")
+num2 = input("Enter second Number :")
+res = num1 + num2
+print(res)
+
+
+output:
+    Enter first number : 100             10.50	               True
+	Enter second number : 200            20.40                 False
+	                    100200           10.5020.40            TrueFalse
+			
+Ex2: To take the input int format we have to do type conversion
+
+num1 = int(input("Enter first number "))	
+num2 = int(input("Enter second number "))		
+res = num1+num2
+print(res)
+
+output:
+Enter first Number :100
+Enter the second Number :200
+100200
+
+EX3: To take the input float format we have to do type conversion
+num1 = float(input("Enter first Number :"))
+num2 = float(input("Enter the second Number :"))
+res = num1 + num2
+print(res)
+
+output :
+Enter first Number :10.20
+Enter the second Number :50.40
+60.599999999999994
+
+
+Observation: 
+
+num1=float(input("Enter first number"))
+
+Enter first Number :Nishant is string format it is not possible to convert into float format]
+Traceback (most recent call last):
+  File "D:/PythonSept-26/python_Study/tp.py", line 1, in <module>
+    num1 = float(input("Enter first Number :"))
+ValueError: could not convert string to float: 'Nishant'
+
+Note: In Python if the type conversion is not possible we will get value error
+
+Ex4:
+num1 = input()
+num2 = input()
+res = num1 + num2
+print(res)
+
+output :
+50
+100
+50100
+
+Ex5:
+num1 = int(input())
+num2 = int(input())
+res = num1 + num2
+print(res)
+
+output : 
+50
+100
+150
+
+Ex5: In python , it is possible combine only similar data type but if we are trying to combine
+      differnt type of data we will get type error
+	But it is possible to combine (int+float+bool) because these are come under number type.
+	  
+print(10+20)
+print(10.30+20.40)
+print("Ratan "+" Anu")
+print(True + True)
+
+print(10+20.50)
+print(10+True+20.4)
+print("Ratan"+10) # TypeError: can only concatenate str (not "int") to str
+print("Nishant"+True) # TypeError: can only concatenate str (not "bool") to str
+
+output: 
+30
+30.7
+Ratan  Anu
+2
+30.5
+31.4
+print("Ratan"+10) # TypeError: can only concatenate str (not "int") to str
+
+int + int :valid
+int + float :valid
+int + float + boolean :valid
+
+int + list :invalid
+tuple + str :invalid
+list +list :valid
+
+python tutorials || python introduction || By Ratna || Class-4
+
+Only installation and compiler info
+
+Python tutorials || python introduction || By Ratna || Class-5
+Different way to format the data 
+
+Basic data type :
+     int :10,20,30,40
+	 float:10.5,20.4
+	 str : "Nishant" , 'Pranjali', 'k'
+     bool :True(1) False(1)
+
+ex1:
+eid, ename, esal = 111, "ratan", 1000.45
+print(eid)
+print(ename)
+print(esal)
+
+print("Emp id:", eid)
+print("Emp  name:", ename)
+print("Emp  sal:", esal)
+print(eid, ename, esal)
+
+print("Emp id:",eid, "Emp name :",ename,"Esal:", esal)
+
+ex2: there are three ways we can format the data
+
+int -->%d
+float-->% f, %g
+str---> %s
+
+eid, ename, esal = 111, "ratan", 1000.45
+print("Emp id: %d  Emp ename: %s ,Emp sal :%f" % (eid, ename, esal))
+print("Emp id:{}  Emp ename:{} ,Emp sal :{}".format(eid, ename, esal))
+print("Emp id:{0}  Emp ename:{1} ,Emp sal :{2}".format(eid, ename, esal))
+print(f"Emp id:{eid}  Emp ename:{ename} ,Emp sal :{esal}")
+
+output: 
+Emp id: 111  Emp ename: ratan ,Emp sal :1000.450000
+Emp id:111  Emp ename:ratan ,Emp sal :1000.45
+Emp id:111  Emp ename:ratan ,Emp sal :1000.45
+Emp id:111  Emp ename:ratan ,Emp sal :1000.45
+
+Ex3: Assignment
+   We can format the float data in two ways %f  %g what is difference ?
+   
+ex5: Escape sequence character, starts with back slash.
+print("hi ratan sir")
+print("hi \"ratan\" sir")
+print("hi '\ratan\' sir")
+print("hi \\ratan\\ sir")
+
+print("hi\t\tratan\t\tsir") # Tab
+print("hi\nratan\nsir") # Enter and divide the word into colum format
+
+output : 
+hi ratan sir
+hi "ratan" sir
+atan' sir
+hi \ratan\ sir
+hi		ratan		sir
+hi
+ratan
+sir
+
+ex6: By Using inverted with ',"","""
+print("hi ratan sir")
+print('hi ratan sir')
+print("""hi ratan sir""")
+
+print("hi 'ratan' sir")
+print('hi "ratan" sir')
+print('hi """ratan""" sir')
+
+output : 
+hi ratan sir
+hi ratan sir
+hi ratan sir
+hi 'ratan' sir
+hi "ratan" sir
+hi """ratan""" sir
+
+ex7: To get the predefined information about any function use help()
+ for example:
+print(help(print))
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Help on built-in function print in module builtins:
+
+print(...)
+    print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+    
+    Prints the values to a stream, or to sys.stdout by default.
+    Optional keyword arguments:
+    file:  a file-like object (stream); defaults to the current sys.stdout.
+    sep:   string inserted between values, default a space.
+    end:   string appended after the last value, default a newline.
+    flush: whether to forcibly flush the stream.
+
+None
+
+Process finished with exit code 0
+--------------------------------------------------------
+ex-8:
+case 1: sep='' the default separator between varible is single space
+if we need any separator between the varaible we can give the separator sep="@@@@" , "####"
+
+num1, num2, num3 = 100, 200, 300
+print(num1, num2, num3)
+
+print(num1, num2, num3, sep="---")
+print(num1, num2, num3, sep="@@@")
+print(num1, num2, num3, sep="#######")
+print(num1, num2, num3, sep="          ")
+print(num1, num2, num3, sep="*************")
+
+output: 
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+100 200 300
+100---200---300
+100@@@200@@@300
+100#######200#######300
+100          200          300
+100*************200*************300
+
+Process finished with exit code 0
+--------------------------------------------------------
+case :2--> end="\n" 
+String append after the last value , default a newline.
+at the end if we dont want new line just make end =""
+
+name = "Nishant"
+print(name, end="")
+
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Nishant
+Process finished with exit code 0
+
+--------------------------------------------------------
+ case3:
+num1, num2, num3 = 100, 200, 300
+print(num1, num2, num3, sep="**", end="############")
+print(num1, num2, num3, sep="$$$$", end="@@")
+
+output :
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+100**200**300############100$$$$200$$$$300@@
+Process finished with exit code 0
+
+Note : sep attribute placed between the value : the default is sapce
+       end attribute placed after the last value  : the default is new line.
+---------------------------------------------------------
+python Tutorials|| python operators ||by Mr.RATAN|| class-06
+
+ex1: Arithematic operator
+x,y = 15,4
+print(x+y)
+x, y = 15, 4
+print(x + y)  # 19
+print(x - y)  # 11
+
+print(x * y)  # 60
+print(2 ** 3)  # 8 , Math power , square
+
+print(x / y)  # 3.75  # Normal division : return float value
+print(x // y)  # 3    #Floor division :return int value
+print(x % y)  # 3 , Return the reminder
+
+output :
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+19
+11
+60
+8
+3.75
+3
+3
+
+Process finished with exit code 0
+--------------------------------------------------------
+operator precedence-->BODMOS rule
+           ()--->Priority1
+		   * / %--->priority2
+		   + - --->Priority3
+		   
+ex2:
+print(3 + 4 - 5)
+print(4 + 4 * 3 / 6)
+print((19 - 3) * ((2 + 2) / 4))
+print(10 / 2 - 3 % 2 + (3 + 2) * 5)
+print(1 ** 2 ** 3)
+print(2 ** 2 ** 3 + 4 // 2 // 2)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+2
+6.0
+16.0
+29.0
+1
+257
+
+Process finished with exit code 0
+
+--------------------------------------------------------
+ex3: Relational operator: it return boolean value
+
+
+x, y = 5, 2
+print(x > y)
+print(x < y)
+
+print(x >= y)
+print(x <= y)
+
+print(x == y)
+print(x != y)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+True
+False
+True
+False
+False
+True
+
+Process finished with exit code 0
+--------------------------------------------------------
+
+0 = disable
+1 = enable
+
+32 16 8 4 2 1 
+      1 0 1 0 = 10
+	  0 1 0 1 = 5
+	  1 1 1 1 = 15
+	1 0 1 0 1 = 20
+1   0 1 0 1 0 = 42
+
+
+
+ A B  A&B A|B
+ t t  t   t      
+ t f  f   t
+ f t  f   t
+ f f  f   f
+ 
+ A B  A&(mul)B  A|(add)B
+ 1 1   1          1
+ 1 0   0          1
+ 0 1   0          1
+ 0 0   0          0
+ 
+ & : All condition are true then it retuns true.
+ | : Any one is true then it retuns true
+ 
+ex4: print(3&9)
+
+using 8 4 2 1
+input1: 3 ------>0011
+input2: 9 ------>1001
+output: & ------>0001--->1
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+1
+
+Process finished with exit code 0
+
+--------------------------------------------------------
+ex:5
+print(3 & 9)
+print(3 | 9)
+print(12 | 11)
+
+output: 
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+1
+11
+15
+
+Process finished with exit code 0
+
+--------------------------------------------------------
+Bitwise operator : We can use for both bitwise & logical condtions calculations.
+
+print((10 > 20) & (10 < 20))
+print(("ratan" == "ratan") | ("anu" == "anu"))
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+False
+True
+
+Process finished with exit code 0
+
+In bitwise operator ,it will take the both operands conditions then decides the result
+
+ex : not return the boolean value
+     other than true or false by default it will take the true
+	 
+print(not True)
+print(not False)
+
+print(not 1)
+print(not 0)
+
+print(not "ratan")
+print(not 100)
+print(not "False")
+
+output :
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+False
+True
+False
+True
+False
+False
+False
+
+Process finished with exit code 0
+---------------------------------------------------------
+logical operator: we can use for only logical calculations check
+
+other languages we have & , && but in python & and
+other languages we have |, || but in  python | or
+
+
+print((10 > 20) and (10 < 20))
+print((3 > 4) or (7 < 8))
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+False
+True
+
+Process finished with exit code 0
+
+Logical operators:  and        or
+cond1 and cond2
+
+   Here the second condition execution depends on first condition.
+   if the first condition is true then only second condtion is execution.
+   if the first condition is false then only second condtion is not execution.
+   
+case1: Bitwise Operator :  in below example it will check both conditions :TypeError
+
+if (10 > 20) & (10 + "ratan" == "10ratan"):
+    print("ratan")
+else:
+    print("anu")
+	
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Traceback (most recent call last):
+  File "D:/PythonSept-26/python_Study/tp.py", line 1, in <module>
+    if (10 > 20) & (10 + "ratan" == "10ratan"):
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+Process finished with exit code 1
+-----------------------------------
+case2: logical operator example: check the first condition then go for second conditions. in below it's working.
+if (10 > 20) and (10 + "ratan" == "10ratan"):
+    print("ratan")
+else:
+    print("anu")
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+anu
+
+Process finished with exit code 0
+
+--------------------------------------------------------
+Observations:
+&   :For the condition parenthesis required.
+     if (("ratan"=="ratan") & ("anu"=="anu")):
+and :For the conditions parenthesis not required.
+       if "ratan"=="ratan" & "anu"=="anu":   
+	Checking the both conditions.
+	   
+cond1 | cond2
+    It will check the two conditions then only it will give result.
+
+Cond1 or Cond2
+     the second condition execution depend upon first condition
+	 if the first condition is false then only second condition execution.
+	 if the first condtion is true then second condition not exec.
+
+5. Assignment operator
+    normal assignment : =
+	Augmented Assignment : *=, += ,-=, /= , %=
+	
+
+# This is normal assignment
+
+val = 10
+print(val)
+Augmented assignment
+
+val += 10  # val = val +10
+val -= 4  # val = val -4
+val /= 2  # val = val / 10
+val %= 2  # val = val /2
+
+print(val)
+
+Note:
+1. increment and decrement operators not supported by python i++, i-- ,--i,++i
+2. Ternary operator not supported by python "?"
+3.Python will not support && || (and)(or)
+
+6.Membership Operator : in , not in :check the data is available or not [list, tuple ,set ,dict]
+name = "ratanit"
+print("ratan" in name)
+print("anu" in name)
+
+print("ratan" not in name)
+print("anu" not in name)
+
+data = [10,20,30,40,50,70]
+
+print(10 in data)
+print(100 in data)
+
+print(10 not in data)
+print(100 not in data)
+
+output :
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+True
+False
+False
+True
+True
+False
+False
+True
+
+Process finished with exit code 0
+--------------------------------------------------------
+Python Tutorials||python operators||by Mr.RATAN|| Class-07
+----------
+
+7. Identity operator : is , is not : memory comparision
+
+Data is two types:
+mutable data : modification are allowed
+immutable data : modification are not allowed
+
+Basic data types: int , float , str ,bool
+
+Note: Variable with immutable data it is pointing to same memory immutable data in future modification are not allowed.
+
+case1:
+val1 = 10
+val2 = 10.5
+print(id(val1))
+print(id(val2))
+
+print(val1 is val2)
+print(val1 is not val2)
+
+output :
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+140704872445040
+2932540485920
+False
+True
+
+Process finished with exit code 0
+
+case2: one memory with two varible
+val1 = 10
+val2 = 10
+print(id(val1))
+print(id(val2))
+print(val1 is val2)
+print(val1 is not val2)
+
+output :
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+140704872445040
+140704872445040
+True
+False
+
+Process finished with exit code 0
+
+case 3: three varible with two memories
+
+val1 = 10
+val2 = 20
+val3 = 10
+
+print(id(val1))
+print(id(val2))
+print(id(val3))
+
+print(val1 is val3)
+print(val1 is not val2)
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+140704872445040
+140704872445360
+140704872445040
+True
+True
+
+Process finished with exit code 0
+
+--------------------------------------------------------
+case 4: Three varible with two memories.
+val1 = 10
+val2 = 20
+res = val1 + 10
+
+print(id(val1))
+print(id(val2))
+print(id(res))
+
+print(val2 is res) # immutable data pointing to same memories
+print(val1 is not res)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+140704872445040
+140704872445360
+140704872445360
+True
+True
+
+Process finished with exit code 0
+--------------------------------------------------------
+case5: four varibles with two memories
+val1 = True
+val2 = True
+val3 = False
+val4 = False
+
+print(id(val1))
+print(id(val2))
+print(id(val3))
+print(id(val4))
+
+print(val1 is val2)
+print(val3 is not val4)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+140704871913808
+140704871913808
+140704871913840
+140704871913840
+True
+False
+
+Process finished with exit code 0
+
+----------------------------
+case 6:result on the basis of data type , four varaibles with 4 memories
+val1 = True
+val2 = 1
+val3 = False
+val4 = 0
+
+print(id(val1))
+print(id(val2))
+print(id(val3))
+print(id(val4))
+
+print(val1 is val2)
+print(val3 is not val4)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+140704867981648
+140704868512592
+140704867981680
+140704868512560
+False
+True
+
+Process finished with exit code 0
+
+--------------------------------------------------------
+case 7 : four varaibles with two memories
+
+val1 = True + True
+val2 = 1 + 1
+val3 = False + False
+val4 = 0 + 0
+
+print(id(val1))
+print(id(val2))
+print(id(val3))
+print(id(val4))
+
+print(val1 is val2)
+print(val3 is val4)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+140704872444784
+140704872444784
+140704872444720
+140704872444720
+True
+True
+
+Process finished with exit code 0
+
+-----------------------
+case 8 : four varaibles with two memories
+
+val1 = True
+val2 = bool(1)
+val3 = False
+val4 = bool(0)
+
+print(id(val1))
+print(id(val2))
+print(id(val3))
+print(id(val4))
+
+print(val1 is val2)
+print(val3 is val4)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+140704871913808
+140704871913808
+140704871913840
+140704871913840
+True
+True
+
+Process finished with exit code 0
+python tutorials || python introduction and data types || by Mr.Ratan || class-08
+
+number System
+Binary Number : 0 1   : 0b 0B
+octal number :0 1 2 3 4 5 6 7 : 0o O0
+decimal number : 0 1 2 3 4 5 6 7 :by default
+hexadecimal number : 0-9 a-f a=10 b=11 c=12 : 0x 0X
+
+0=desable
+1=enable
+Conversion of decimal to oct , hex ,binary
+
+32 16 8 4 2 1
+===========
+1 0 1 0 =10
+0 1 0 1 =5 
+
+binary number :
+num1 = 0b0101
+print(num1)
+
+num2 = 0B1111
+print(num2)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+5
+15
+
+Process finished with exit code 0
+
+
+octal Number :
+
+num = 0o123
+print(num)
+
+num2 = 0o277
+print(num2) # 2*8^2+7*8^1+7*8^0 =191
+
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+83
+191
+
+Process finished with exit code 0
+
+HexDecimal Number:
+num = 0X123
+print(num)  # 1*16^2+2*16^1+3*16^0 = 291
+
+num2 = 0X277
+print(num2) # 2*16^2+7*16^1+7*16^0 =631
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+291
+631
+
+Process finished with exit code 0
+
+--------------------------------------------------------
+Decimal Number:
+num = 123
+print(num)  
+
+num2 = 277
+print(num2)
+
+
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+123
+277
+
+Process finished with exit code 0
+
+--------------------------------------------------------
+Hex decimal :
+print(bin(15))
+print(bin(7))
+
+print(oct(100))  # 100 % 8 taking only reminder 1-4-4
+
+print(hex(320))  # 100 % 16 taking only reminder 1-4-0
+
+output :
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+0b1111
+0b111
+0o144
+0x140
+
+Process finished with exit code 0
+
+Observation for tricks:
+# Swapping the variables
+x, y = 100, 200
+x, y = y, x
+print(x, y)
+
+# reassigning the variables
+num = 10
+print(num)
+num = 100
+print(num)
+
+# deleting the variables
+
+numd = 10
+print(numd)
+del numd
+print(numd)  # NameError: name 'numd' is not defined
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Traceback (most recent call last):
+  File "D:/PythonSept-26/python_Study/tp.py", line 17, in <module>
+    print(numd)
+NameError: name 'numd' is not defined
+200 100
+10
+100
+10
+
+Process finished with exit code 1
+---------------------------------------------------------
+python tutorials || flow control statements || by Mr.Ratan || class-09
+
+Flow control statements
+There are three types of flow control statements in python,
+  conditions statements : Based on the particular condition the selected block will be executed
+  
+  if 
+  if- else
+  elif
+  
+  looping / iterator statement : the same code repeated multiple times
+  for 
+  while
+  
+  Transfer statement : the control is transfer from one location another:
+  
+  break
+  continue
+  return
+  try
+  
+  # indedention follow 4 space
+  
+  # if statement :takes only one option.(true option)
+  if(cond):
+   st(s)
+   st(s)
+ex: if only having 1 options
+x,y = 62,22
+if(x>y):
+   print("Hi Students Good Morning")
+   print("how are you")
+
+ex2: if else condtion having 2 options
+x, y = 62, 22
+if (x < y):
+    print("Hi Students Good Morning")
+    print("how are you")
+else:
+    print("hi ratan , good evening")
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+hi ratan , good evening
+
+Process finished with exit code 0
+
+if(cond):
+ st(s)
+else :
+ st(s)
+ if the condition is true if body executed(true body)
+ if the condition is false then else body executed(false body)
+ 
+ case1 :to the if statement wa are passing normal condition.
+ 
+if 10 > 20:
+    print("Hi Nishant")
+else:
+    print("PMP");
+
+case2: Here wa are passing 0= False and 1=True
+if 0:
+    print("NMN")
+else:
+    print("PMP");
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+PMP
+
+Process finished with exit code 0
+
+---
+if 1:
+    print("NMN")
+else:
+    print("PMP");
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+NMN
+
+Process finished with exit code 0
+
+case3: Here we are passing boolean as costants
+
+if True:
+    print("NMN")
+else:
+    print("PMP");
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+NMN
+
+Process finished with exit code 0
+
+if False:
+    print("NMN")
+else:
+    print("PMP");
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+PMP
+
+Process finished with exit code 0
+
+------
+case4: To the if we are passing the condition other than true of false by defult it will take as a True.
+
+if "ratan":
+    print("NMN")
+else:
+    print("PMP");
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+NMN
+
+Process finished with exit code 0
+
+case6: one liner code and any one only block has executed.
+print("NMN") if 20 > 10 else print("PMP");
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+NMN
+
+Process finished with exit code 0
+-------
+print("NMN") if 20 < 10 else print("PMP");
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+PMP
+
+Process finished with exit code 0
+----------
+res = 100 if 20 < 10 else 200;
+print(res)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+200
+
+Process finished with exit code 0
+
+res = "NMN" if 20 < 10 else "PMP";
+print(res)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+PMP
+
+Process finished with exit code 0
+
+a, b = 10, 20
+res = a if a < b else b
+print(res)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+10
+
+Process finished with exit code 0
+age = int(input("Enter your age : "))
+if age > 18:
+    print("Eligible for voting.........")
+else:
+    print("not eligible for voting")
+
+output :
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Enter your age : 25
+Eligible for voting.........
+
+Process finished with exit code 0
+
+----------
+
+pass keyword: it is a empty statement in python.
+if 10 < 20:
+    pass
+else:
+    print("Hi Nishant")
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+
+Process finished with exit code 0
+
+case2: if condition false then output is
+if 10 > 20:
+    pass
+else:
+    print("Hi Nishant")
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Hi Nishant
+
+Process finished with exit code 0
+
+elif statement : Takes more than two options.
+     it is a short from of else-if
+	 
+	syntax: 
+	  if cond:
+	     st(s)
+	  elif cond
+	     st(s)
+	  elif cond:
+	      st(s)
+	  else :
+	      st(s)
+		  
+Based on the conditions the selected blocked is executed , if the condition are not matched then else block exeuted by default.
+
+Note: in elif without else block we can write the code but not recommanded.
+it is always recommanded to take the else block at last.
+assignment : Check the number is positive /Negative ,zero
+
+num = float(input("Enter a number: "))
+if num > 0:
+    print("Positive number")
+elif num == 0:
+    print("Zero")
+else:
+    print("Negative number")
+
+output :
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Enter a number: -5
+Negative number
+
+Process finished with exit code 0
+
+ex1: Take the year from enduser : check leap year or not ?
+ex2: Take the number from end user print that is even or odd
+ex3: Take two number from end user print the bigger number ?
+ex4: This example use nested if else condition.
+           Take the number from end user check it's positive or negaive
+		   
+		   if it is positive,print it is even or odd
+		   if it is negative,print it is even or odd.
+--------------------------------------------------------------------------------------------------------------
+python tutorials | flow control statements | by Mr.Ratan | Class-10
+
+Looping statements:
+range(end)   start from zero : range(10) :0 1 2 3
+range(started ,end) :range(4,7) : 4 5 6
+range(start , stop ,step ) :range(3 9 3) : 3 6
+
+syntax 
+   for temp_var in iterator_data:
+       st(s)
+	   print(temp_var)
+	  
+print("Hi 1st range--------------------")
+for x in range(10):
+    print("Good Morning......", x)
+
+print("Hi 2nd range--------------------")
+for x in range(3, 7):
+    print("Good Evening....", x)
+
+print("Hi 3rd range--------------------")
+for x in range(2, 8, 2):
+    print("Hi Student ....", x)
+
+print("Hi 4th range--------------------")
+val = 3
+for x in range(val):
+    print("My code :", x)
+
+# range(10): how many times to repeat the loop
+# x : will store every iteration value.
+
+output :
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Hi 1st range--------------------
+Good Morning...... 0
+Good Morning...... 1
+Good Morning...... 2
+Good Morning...... 3
+Good Morning...... 4
+Good Morning...... 5
+Good Morning...... 6
+Good Morning...... 7
+Good Morning...... 8
+Good Morning...... 9
+Hi 2nd range--------------------
+Good Evening.... 3
+Good Evening.... 4
+Good Evening.... 5
+Good Evening.... 6
+Hi 3rd range--------------------
+Hi Student .... 2
+Hi Student .... 4
+Hi Student .... 6
+Hi 4th range--------------------
+My code : 0
+My code : 1
+My code : 2
+
+Process finished with exit code 0
+
+case 2: 
+
+   range(low_value ,high_value)
+      range(2,9)
+	  increment is automatically done by +1
+	  
+	range(low_value ,high_value, inc_value)
+      range(2,7 ,2)
+	  increment is automatically done by +2
+	  
+	 range(high_value,low_value.dec_value)
+      range(7,2,-3)
+print("1st range functions")
+for x in range(3, 9):
+    print("Hi ratan sir.........", x)
+
+print("2st range functions")
+for x in range(3, 9, 2):
+    print("hi nishant sir.......", x)
+
+print("3rd range functions")
+for x in range(8, 2, -1):
+    print("Hi Code :", x)
+
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+1st range functions
+Hi ratan sir......... 3
+Hi ratan sir......... 4
+Hi ratan sir......... 5
+Hi ratan sir......... 6
+Hi ratan sir......... 7
+Hi ratan sir......... 8
+2st range functions
+hi nishant sir....... 3
+hi nishant sir....... 5
+hi nishant sir....... 7
+3rd range functions
+Hi Code : 8
+Hi Code : 7
+Hi Code : 6
+Hi Code : 5
+Hi Code : 4
+Hi Code : 3
+
+Process finished with exit code 0
+---------------
+case 3: Taking negative values
+
+print("1st for loop")
+for x in range(-7, -2):
+    print("Good Morning.......", x)
+
+print("2st for loop")
+for x in range(-7, -2, 2):
+    print("Good Evening.......", x)
+
+print("3st for loop")
+for x in range(-3, -8, -2):
+    print("Good Night.......", x)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+1st for loop
+Good Morning....... -7
+Good Morning....... -6
+Good Morning....... -5
+Good Morning....... -4
+Good Morning....... -3
+2st for loop
+Good Evening....... -7
+Good Evening....... -5
+Good Evening....... -3
+3st for loop
+Good Night....... -3
+Good Night....... -5
+Good Night....... -7
+
+Process finished with exit code 0
+------------------------------------
+# case :4 --> When we give the string data to the for loop it will iterate every char
+
+for x in "ratan":
+    print(x)
+
+print("-------------------------------")
+for x in "2021":
+    print(x)
+
+for x in 1000:
+    print(x)     # TypeError : int
+	object is not iterable.
+	
+outputs:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+r
+a
+t
+a
+n
+-------------------------------
+2
+0
+2
+1
+Traceback (most recent call last):
+  File "D:/PythonSept-26/python_Study/tp.py", line 10, in <module>
+    for x in 1000:
+TypeError: 'int' object is not iterable
+
+Process finished with exit code 1
+--------------
+Break : use for stop the executions by using in Break keyword
+
+for x in range(1, 11):
+    if x == 4:
+        break
+    print(x)
+print("*****************")
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+1
+2
+3
+*****************
+
+Process finished with exit code 0
+------------------------------------
+for x in range(1, 11):
+    if x == 4:   # 4 th iteration has skipped
+        continue
+    print(x)
+print("*****************")
+
+
+output :
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+1
+2
+3
+5
+6
+7
+8
+9
+10
+*****************
+
+Process finished with exit code 0
+--------------------------------------------
+# difference between break and stop keyword
+
+num = int(input("Hey boy enter a number to stop the execution : "))
+for x in range(10):
+    if x == num:
+        break
+    print(x)
+
+print("-----***********------------")
+num = int(input("Hey girl enter a number to skip the execution : "))
+for x in range(10):
+    if x == num:
+        continue
+    print(x)
+-------
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Hey boy enter a number to stop the execution : 5
+0
+1
+2
+3
+4
+-----***********------------
+Hey girl enter a number to skip the execution : 5
+0
+1
+2
+3
+4
+6
+7
+8
+9
+
+Process finished with exit code 0
+------------
+for x in range(1, 11):
+    print(x)
+
+for x in range(1, 11):  # make all number in row
+    print(x, end=" ")
+
+output: 
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+1 2 3 4 5 6 7 8 9 10 
+Process finished with exit code 0
+----------------------------------------
+# case -9
+# by using sum() function to add the number
+
+print(sum(range(10)))
+
+print(sum(range(1, 11)))
+
+print(sum(range(2, 6)))
+
+print(sum(range(3, 9, 3)))
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+45
+55
+14
+9
+
+Process finished with exit code 0
+
+---------------------------------------------
+# along the for else block as normally
+
+for x in range(3):
+    print("Good Morning")
+else:
+    print("Normally executed")
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Good Morning
+Good Morning
+Good Morning
+Normally executed
+
+Process finished with exit code 0
+-----------------------------------------------
+# abnormal termination case  the for else block is not executed
+
+for x in range(3):
+    print("Good Morning")
+    if x == 2:
+        break
+else:
+    print("Normally executed")
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Good Morning
+Good Morning
+Good Morning
+
+Process finished with exit code 0
+
+---------------------------------------------
+# abnormal termination case  the for else block is not executed
+
+for x in range(3):
+    print("Good Morning")
+    print(10+"nishant")
+else:
+    print("Normally executed")
+
+---------
+outputs:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Good Morning
+Traceback (most recent call last):
+  File "D:/PythonSept-26/python_Study/tp.py", line 5, in <module>
+    print(10+"nishant")
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+Process finished with exit code 1
+
+--------------
+# abnormal termination case  the for else block is not executed
+import sys
+
+for x in range(3):
+    print("Good Morning")
+    sys.exit(0)
+else:
+    print("abnormal executed")
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Good Morning
+
+Process finished with exit code 0
+--------------
+python tutorials | flow control statements | by Mr.Ratan | class-video 11
+                     While loop
+					 
+syntax: 
+while cond:
+   body
+   
+ex-1 : for loop vs while to print the data 10 times.
+
+for x in range(10):
+    print("Good Morning........")
+
+print("------------for loop above and while loop below--------------------")
+i = 0
+while i < 10:
+    print("Good Evening")
+    i += 1
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Good Morning........
+Good Morning........
+Good Morning........
+Good Morning........
+Good Morning........
+Good Morning........
+Good Morning........
+Good Morning........
+Good Morning........
+Good Morning........
+------------for loop above and while loop below--------------------
+Good Evening
+Good Evening
+Good Evening
+Good Evening
+Good Evening
+Good Evening
+Good Evening
+Good Evening
+Good Evening
+Good Evening
+
+Process finished with exit code 0
+--------------
+ex-2:
+guss = 25
+while True:
+    userguss = int(input("Enter guss value :"))
+    if userguss == guss:
+        print("Configurations you won the gift")
+        break
+    elif userguss > guss:
+        print("User enter more than guss value :enter again")
+    else:
+        print("User enter less than guss value :enter again")
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Enter guss value :12
+User enter less than guss value :enter again
+Enter guss value :55
+User enter more than guss value :enter again
+Enter guss value :25
+Configurations you won the gift
+
+Process finished with exit code 0
+
+-------------------------------
+Note: if you know how many times to repeat user for loop
+if you don't know how many times to repeat use while loop.
+
+ex:3 while with else block
+     Along with while loop possible to take the else block,the else block terminated normally.
+	 
+i = 0
+while i < 10:
+    print("Good Morning ", i)
+    i += 3
+else:
+    print("else normal termination")
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Good Morning  0
+Good Morning  3
+Good Morning  6
+Good Morning  9
+else normal termination
+
+Process finished with exit code 0
+
+case2: Abnormal terminations: Break or condition in that case , it's abnormal terminations and also else block is not exexcuted.
+
+i = 0
+while i < 10:
+    print("Good Morning ", i)
+    i += 3
+    if i == 6:
+        break
+else:
+    print("else normal termination")
+-----
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Good Morning  0
+Good Morning  3
+
+Process finished with exit code 0
+
+case:3 facing error then also else block is not executed.
+i = 0
+while i < 10:
+    print("Good Morning ", i)
+    i += 3
+    print(10+"ratan")
+else:
+    print("else normal termination")
+----------
+ D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Good Morning  0
+Traceback (most recent call last):
+  File "D:/PythonSept-26/python_Study/tp.py", line 5, in <module>
+    print(10+"ratan")
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+Process finished with exit code 1
+
+----------------
+There are three cases else block not executed :
+case1: when we use break : abnormal termination else block not executed.
+case2: when we will get error : abnormal termination else block not executed.
+case3: when we use exit() : abnormal termination else block not executed.
+import sys
+i = 0
+while i < 10:
+    print("Good Morning ", i)
+    i += 3
+    sys.exit(0)
+else:
+    print("else normal termination")
+
+---------
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Good Morning  0
+
+Process finished with exit code 0
+---------------------
+
+python tutorials | variables and functions | by Mr.Ratan | video no-12
+
+        **********Function and Variables **********
+		
+1. function used to write the block of python code.
+2. We can call the function in application wherver we want in different module.
+3.Declare the function using def keywords.
+4.main objective of the function is reuse the code.
+5.The function name can be anything , but it should be meaningfull.The function name starts with lower case. if the function name contains more than one word every word separate with underscore.
+
+The function contains theree parts
+1. function declarations
+2. function body // definition // implementations
+
+Syntax:
+    def func_name(args_List):
+	body(Logics)
+	
+ex1:
+def wish():
+    print("Good Morning students..........")
+
+
+function call ............
+def wish():
+    print("Good Morning.....")
+
+    
+def add(num1, num2):
+    print(num1 + num2)
+
+
+# function call
+wish()
+add(10, 20)
+
+------------
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Good Morning.....
+30
+
+Process finished with exit code 0
+
+------------------------------
+            ****** Variable************
+
+Variable used to store the data & it is fixed memory locating storing thee value
+ eid=111;
+ ename="ratan"
+ esal=10000.45
+ 
+ There are two types of variable
+ 1.local variable
+ 2.Global variable
+ 
+ ex1: local variables
+ 
+ a. The varaible which are declared inside the function are called local variable and function arguments also local varaible.
+ b. The scope of the local variable is with in the function we can not access out side of the function.
+ 
+ 
+name = "Ratan"
+
+
+def wish():
+    print("Good Morning: ", name)
+
+
+def wish2():
+    print("Good Evening", name)
+
+
+# function calling
+wish()
+wish2()
+
+------------
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Good Morning:  Ratan
+Good Evening Ratan
+
+Process finished with exit code 0
+
+-------------------------------
+
+# 2-global var
+
+def add(2-arg):
+    addition of local data
+	addition of global data
+
+def mul(2-arg):
+    multiplication of local data
+	multiplication of global data		
+	
+call add
+call mul
+
+num1, num2 = 10, 20
+
+
+def add(val1, val2):
+    print("Add function val -Para :", val1 + val2)
+    print("Add function val- Global :", num1 + num2)
+
+
+
+
+
+def mul(val1, val2):
+    print("Add function val -Para :", val1 + val2)
+    print("Add function val -Global :", num1 * num2)
+
+
+# function call
+add(3, 5)
+print("-----------------------**********--------------")
+mul(4, 6)
+
+---------
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Add function val -Para : 8
+Add function val- Global : 30
+-----------------------**********--------------
+Add function val -Para : 10
+Add function val -Global : 200
+
+Process finished with exit code 0
+
+------------------------
+
+Golbal Variables
+
+a. the varaible that are declared out sid of the function are called global varaible.
+b. All function can access global varibles.
+
+ex 3: 
+case1: local varible & global varible : different varible names
+
+case2: local varaible & global variable : same variable names
+
+if the application contains both local & global varaible same name then to represent global varible use 
+global() function.
+
+num1, num2 = 10, 20
+
+
+def add(num1, num2):
+    print(num1 + num2)
+    print(globals()['num1'] + globals()['num2'])
+
+
+def mul(num1, num2):
+    print(num1 * num2)
+    print(globals()['num1'] * globals()['num2'])
+
+
+add(10, 20)
+print("***********************")
+mul(12, 6)
+
+------------------
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+30
+30
+***********************
+72
+200
+
+Process finished with exit code 0
+
+------------------------------------------
+# global ,local and static variable
+
+school_name, school_code = "ratanit", 12345
+
+
+def student_info(id, name, addr):
+    print(id, name, addr, school_name, school_code)
+
+
+def teacherInfo(id, name, addr):
+    print(id, name, addr, school_name, school_code)
+
+
+student_info(111,"Nishant","Nanded")
+teacherInfo(222,"Narwade","Latur")
+
+----------
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+111 Nishant Nanded ratanit 12345
+222 Narwade Latur ratanit 12345
+
+Process finished with exit code 0
+
+--------------------------------------
+Python Tutorials | functions and variables | by Mr.Ratan | video 13
+
+********** Global keyword **********
+
+global keyword : used to represent global variable.
+
+ex-1:
+case-1: It is possible to declare the global varible inside the function by using global keyword.
+
+def wish():
+    global name
+    name = 'ratan'
+    print(name)
+
+
+# function calling
+wish()
+print(name)
+
+case2: Here taking local & global variables
+name = "ratan"
+
+
+def wish():
+    name = 'kkc'  # it is local data
+    print("Good Morning :", name)
+
+
+# function calling
+wish()
+print(name)
+------
+outputs:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Good Morning : kkc
+ratan
+
+Process finished with exit code 0
+
+---------------------------
+case 3: Inside the function to represent or change the global variable:use global keyword
+
+name = "Sravya"
+
+
+def wish():
+    global name
+    name = 'ratan'
+    print("this is variable in side the function :", name)
+
+
+wish()
+print("this is Global variable and the function o/p is :", name)
+
+outputs:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+this is variable in side the function : ratan
+this is Global variable and the function o/p is : ratan
+
+Process finished with exit code 0
+
+---------------------------------
+
+
+
+	
+def a_fun():
+    global foo
+    foo = 'A'
+
+
+def b_fun():
+    global foo
+    foo = 'b'
+
+
+# function calling
+
+
+b_fun()
+a_fun()
+print(foo)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+A
+
+Process finished with exit code 0
+
+-----------------------------------
+x = 10
+
+
+def a_fun():
+    global x
+    x = 20
+
+
+def b_fun():
+    x = 30
+
+
+# function calling
+a_fun()
+b_fun()
+print(x)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+20
+
+Process finished with exit code 0
+
+------------------------------------------
+ex 4:Global ,local and static variable
+a, b, x, y = 1, 15, 3, 4
+
+
+def foo(x, y):
+    global a
+    a = 42
+    x, y = y, x
+    b = 33
+    print(a, b, x, y)
+
+
+# function calling
+
+foo(700, 415)
+print(a, b, x, y)
+
+---------
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+42 33 415 700
+42 15 3 4
+
+Process finished with exit code 0
+
+-------------------------
+def func1():
+    return "ratan"
+
+
+def func2():
+    print("Good Morning....")
+
+
+def func3():
+    return 10, 20, 30, 40
+
+
+def func4():
+    return
+
+
+# function calling
+
+res1 = func1()
+print("This is function1 :", res1)
+
+res2 = func2()
+print("This is function2 :", res2)
+
+res3 = func3()
+print("This is function3 :", res3)
+
+res4 = func4()
+print("This is function1 :", res4)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+This is function1 : ratan
+Good Morning....
+This is function2 : None
+This is function3 : (10, 20, 30, 40)
+This is function1 : None
+
+Process finished with exit code 0
+
+---------------------
+Note:
+func1: The function can return any type of data
+func2: The default return value of the function is None
+func3: Whne we declare empty return by defult it returns None
+func4: The function can return multiple value
+
+ex2:
+def func1():
+    print("Good Morning")
+    return "Babita"
+
+
+# function call : holding the return value & printing
+
+res = func1()
+print(res)
+
+# functional call : directly printing the value
+
+# a. Holding the return value is optional, but it is recommended
+# b. we can hold the function return value in two ways,
+
+# 1. hold the return value and print it.
+# 2. Directly printing return value
+
+
+outputs:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+Good Morning
+Babita
+
+Process finished with exit code 0
+
+-------------------------------
+# ex-3:
+# case-1
+# 1. inside the function only one return statement allowed
+# 2.if we declared multiple return statements after the first return the data will be ignored.
+
+def wish():
+    print("hi sir good morning")
+    return 10
+    print("Hi sir good evening")
+    return 20
+    return 30
+
+
+# function calling
+
+res = wish()
+print(res)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+hi sir good morning
+10
+
+Process finished with exit code 0
+
+------------------------------------
+# case-2 here we are writing return in if-else statements but only return will be executed
+
+def wish():
+    if 10 > 20:
+        return 10
+    else:
+        return 20
+
+
+# function calling
+res = wish()
+print(res)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+20
+
+Process finished with exit code 0
+-----------------------------------------
+# how to call functions
+def add(a, b):
+    print(a + b)
+
+
+# function calling
+add(20, 30)
+
+i, j = 4, 7
+add(i, j)
+
+num1 = int(input("Enter the first name : "))
+num2 = int(input("Enter the second name : "))
+
+add(num1, num2)
+
+output:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+50
+11
+Enter the first name : 75
+Enter the second name : 25
+100
+
+Process finished with exit code 0
+
+------------------------
+# ex6: assignment
+
+a_var, b_var, c_var, d_var = 10, 15, 25, 100
+
+
+def my_func():
+    print("in a func a_var ", a_var)  # 10
+    b_var = 100 + a_var
+    d_var = 2 * a_var
+    print(b_var, d_var, c_var)  # 110,20,25
+    return b_var + 10
+
+
+# function call
+c_var = my_func()  # 120
+print(a_var, b_var, c_var, d_var)  # 10, 15, 120, 100
+
+outputs:
+D:\PythonSept-26\venv\Scripts\python.exe D:/PythonSept-26/python_Study/tp.py
+in a func a_var  10
+110 20 25
+10 15 120 100
+
+Process finished with exit code 0
+
+------------------------
+Python Tutorials || functions and variables || function arguments || by Mr.Ratan|| video no-14
+
+function arguments
+
+functional arguments are four types:
+a.default arguments
+b.required argument
+c.keyword arguments
+d.varible arguments
+
+First we will go for
+
+A.Defult arguments:
+ex:1 -->Passing paramter then it's work as replace or orride the same value
+def emp_details(eid=111, ename='Nishant', esal=100.4542):
+    print(f"Emp id={eid} Emp name={ename} Emp sal={esal}")
+
+# function call
+emp_details()
+emp_details(222)
+emp_details(333,"Pranjali")
+emp_details(444,"Narwade",254000)
+
+--------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+Emp id=111 Emp name=Nishant Emp sal=100.4542
+Emp id=222 Emp name=Nishant Emp sal=100.4542
+Emp id=333 Emp name=Pranjali Emp sal=100.4542
+Emp id=444 Emp name=Narwade Emp sal=254000
+
+Process finished with exit code 0
+
+----------------------
+Q-ex2:Required argument: function expectin the 3 argurmnt we are passing 3 arg that concept is know as requirements.
+ ex2:
+def emp_details(eid, ename, esal):
+    print(f"Emp id={eid} Emp name={ename} Emp sal={esal}")
+
+# function call
+emp_details(555,"PETER",254000)
+
+--------------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+Emp id=555 Emp name=PETER Emp sal=254000
+
+Process finished with exit code 0
+
+-------------------
+ex3:
+if are not psssing the data then getting the error
+def emp_details(eid, ename="ratan", esal=52.224):
+    print(f"Emp id={eid} Emp name={ename} Emp sal={esal}")
+
+# function call
+emp_details()
+
+----------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+Traceback (most recent call last):
+  File "D:/PythonOCT-12/Xpython-Program/test2.py", line 5, in <module>
+    emp_details()
+TypeError: emp_details() missing 1 required positional argument: 'eid'
+
+Process finished with exit code 1
+
+--------
+Ex3: by passing the emp id then check
+def emp_details(eid, ename="ratan", esal=52.224):
+    print(f"Emp id={eid} Emp name={ename} Emp sal={esal}")
+
+# function call
+emp_details(777)
+emp_details(999,"kk",54.356)
+
+
+------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+Emp id=777 Emp name=ratan Emp sal=52.224
+Emp id=999 Emp name=kk Emp sal=54.356
+
+Process finished with exit code 0
+-----------------------
+in function argument ones defult argument start then all arugument should be defult
+All defult arguments must be last arguments.
+
+EX3-3: no defult argument followed the defult arguments
+
+def emp_details(eid, ename="ratan", esal):
+    print(f"Emp id={eid} Emp name={ename} Emp sal={esal}")
+
+# function call
+emp_details(777)
+----------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+  File "D:/PythonOCT-12/Xpython-Program/test2.py", line 1
+    def emp_details(eid, ename="ratan", esal):
+                   ^
+SyntaxError: non-default argument follows default argument
+
+Process finished with exit code 1
+--------------------------------------
+Keyword arguments:argument start then next arugument should be keywords.
+def emp_details(eid=111, ename="KKC", esal=88):
+    print(f"Emp id={eid} Emp name={ename} Emp sal={esal}")
+
+# function call
+emp_details(77.7)
+----------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+Emp id=77.7 Emp name=KKC Emp sal=88
+
+Process finished with exit code 0
+-------------------------------------------------
+Ex: passing n number of arguments:
+# variable arguments concept
+def disp(*arg):
+    print(arg)
+
+# function call
+
+disp(10)
+disp(20,"Nishant")
+-------------------------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+(10,)
+(20, 'Nishant')
+
+Process finished with exit code 0
+
+-----------------------------------------------
+ex5: Passing the argument -->
+varible argument
+case1: it can take any number of values[can take 0 or more values & any type of value]
+# variable arguments concept
+def disp(*arg):
+    print("Variable arguments.......... ", arg)
+
+
+# function call
+
+disp(10)
+disp(10, 20)
+disp(10, 20, 30)
+disp(10, 20.4, "ratan")
+---------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+Variable arguments..........  (10,)
+Variable arguments..........  (10, 20)
+Variable arguments..........  (10, 20, 30)
+Variable arguments..........  (10, 20.4, 'ratan')
+
+Process finished with exit code 0
+------------------------------------------
+case2:alog with the varible argument it is possible to take normal arguments.
+def disp(x, *arg):
+    print("Normal Argument:-->10 : ", x, arg)
+
+
+# function call
+
+disp(10)
+disp(10, 20)
+disp(10, 20, 30)
+disp(10, 20.4, "ratan")
+---------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+Normal Argument:-->10 :  10 ()
+Normal Argument:-->10 :  10 (20,)
+Normal Argument:-->10 :  10 (20, 30)
+Normal Argument:-->10 :  10 (20.4, 'ratan')
+
+Process finished with exit code 0
+-------------------------------------------------
+case3: If the normal argument is last argument then pass the data using keyword type.
+def disp(*var, val):
+    print(var, " ", val)
+
+
+# function call
+disp(12, 34, "Nishant", val="This is last var :-->NMN")
+
+----------------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+(12, 34, 'Nishant')   This is last var :-->NMN
+
+Process finished with exit code 0
+
+------------------------------
+case4: by using the sum operations
+def disp(*var):
+    print(var)
+    print(sum(var))
+
+
+# function call
+disp(12, 34, 55, 25, 45)
+
+-----------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+(12, 34, 55, 25, 45)
+171
+
+Process finished with exit code 0
+
+--------------------------------------------
+Case5: if you are apply with string then getting error
+def disp(*var):
+    print(sum(var))
+
+
+# function call
+disp(12, 34, 55, "Nishant") #TypeError: unsupported operand type(s) for +: 'int' and 'str'
+--------------------------------
+case:5 function can take only one varaible arguments:
+# the function can take only one variable argument
+def disp(*var1, *var2):
+    print(var1)
+
+
+# function call
+disp(12, 34, 55, "Nishant") # SyntaxError: invalid syntax
+---------
+Python Tutorials || variables and functions || by Mr.Ratan || class-15
+--
+case: outer and inner function call:
+def outer():
+    print("outer function code")
+
+    def inner():
+        print("Inner function code")
+
+    inner()
+
+
+# function call
+outer()
+-------------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+outer function code
+Inner function code
+
+Process finished with exit code 0
+-----------------------------
+case2: all inner function can access outer function data:
+def outer():
+    name = "ratan"
+    print("outer function code", name)
+
+    def inner():
+        print("Inner function code", name)
+
+    def inner2():
+        print("Inner2 function code", name)
+
+    inner()
+    inner2()
+
+
+# function call
+outer()
+-----------
+def outer():
+    name = "ratan"
+    print("outer function code", name)
+
+    def inner():
+        print("Inner function code", name)
+
+    def inner2():
+        print("Inner2 function code", name)
+
+    inner()
+    inner2()
+
+
+# function call
+outer()
+----------------------
+ex3:assignment 3:
+val = 100
+
+
+def outer():
+    name = "ratan"
+
+    def inner1():
+        nonlocal name
+        name = "anu"
+
+    def inner2():
+        global val
+        val = 200
+
+    print(name)
+    inner1()
+    inner2()
+    print(name)
+
+
+# function call
+outer()
+print(val)
+
+----------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+ratan
+anu
+200
+
+Process finished with exit code 0
+
+--------------------------------
+# Case-4 : if user using 2 args with in same method the output is like below
+
+def disp(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+
+disp(10, 20, 30, a=5, b=6, c=7, d=8)
+---------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+(10, 20, 30)
+{'a': 5, 'b': 6, 'c': 7, 'd': 8}
+
+Process finished with exit code 0
+-----------------------------
+# case-5: if user enter the 3 input then output is:
+# Case-4 : if user using 2 args with in same method the output is like below
+
+def disp(x, *args, **kwargs):
+    print(x)
+    print(args)
+    print(kwargs)
+
+
+disp(3, 10, 20, 30, a=5, b=6, c=7, d=8)
+
+--------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+3
+(10, 20, 30)
+{'a': 5, 'b': 6, 'c': 7, 'd': 8}
+
+Process finished with exit code 0
+-----------------------------------------------
+# kwarg related key and values ,items
+def disp(**kwargs):
+    for x in kwargs:
+        print(x)
+
+    # for loop print the values
+    for x in kwargs.values():
+        print(x)
+
+    # for loop print the both key and values
+    for x, y in kwargs.items():
+        print(x, y)
+
+
+# function call
+disp(a=10, b=20, c=30, d=40)
+
+
+--------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+a
+b
+c
+d
+10
+20
+30
+40
+a 10
+b 20
+c 30
+d 40
+
+Process finished with exit code 0
+----------------
+# just execries and information
+def my_func():
+    """AB BBC DD My Nishant"""
+    pass
+
+
+print(my_func.__doc__)
+print(my_func.__name__)
+
+ 
+
+
+
+Process finished with exit code 0
+---------------------------------------- 
+ex5: converting type convertions:
+print("----------Convert into int")
+print(int(10))
+print(int(10.5))
+print(int(True))
+# print(int("ratan"))  #ValueError: invalid literal for int() with base 10: 'ratan'
+
+print("----------Convert into float")
+print(float(10.5))
+print(float(10))
+print(float(False))
+print(float("10.5") + float("20.40"))
+# print(float("Nishant")) #ValueError: could not convert string to float: 'Nishant'
+
+print("----------Convert into boolean")
+print(bool(True))
+print(bool(0))
+print(bool(False)+bool(True))
+print(bool("10.5") + bool("20.40")+bool("Nishant"))
+
+print("----------Convert into string")
+
+print(str("10.5") + str("20.40")+str(" Nishant"))
+print(str("10.5") + str("20.40"))
+print(str("10") + str("20"))
+print(str(True) + str(False))
+
+---------------
+D:\PythonOCT-12\venv\Scripts\python.exe D:/PythonOCT-12/Xpython-Program/test2.py
+----------Convert into int
+10
+10
+1
+----------Convert into float
+10.5
+10.0
+0.0
+30.9
+----------Convert into boolean
+True
+False
+1
+3
+----------Convert into string
+10.520.40 Nishant
+10.520.40
+1020
+TrueFalse
+
+Process finished with exit code 0
+------------------------------------
+
+Python Tutorials || Advanced Data Types || by Mr.Ratan || video no-16
+
+
+ 
+
+
+	  
+	  
+ 
+
+
+
+
+
+
+
+			
+

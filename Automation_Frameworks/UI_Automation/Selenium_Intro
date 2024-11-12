@@ -1,0 +1,502 @@
+
+
+Selenium------> 3rd party
+                install -----> ????
+                pip install selenium ------> selenium --->
+
+
+                3ways
+                ---->
+
+                pip install selenium
+
+
+                2 import if it showing red color ---install
+
+                3 add
+
+
+                Selenium-collection of modules/classes/functions/variables
+
+
+                Selenium ---> webdriver
+                    there version ?? --which one
+
+                    selenium 4.x
+
+
+                webdriver -----> is nothing but browser
+
+                CRUD
+
+                UI/GUI -----> User Interface()
+
+                UI---presentation---what exactly end user will see
+                API- DB ---BAckend
+
+
+
+
+                modules---function/class/variable-----> any file (.py)
+
+
+
+                Selenium--->
+
+                class ---->encapsulation
+                variables---> ???
+                functions---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Selenium----->
+
+                1 Open source Automation tool/library
+                2 UI/GUI Automation library
+                3 3rd party ---it is not present in python
+                4 framework for webdriver ----> chrome,chromium,firefox,edge,safari,opera
+                                                IE
+                5 library is used as API for webdriver (chrome,chromium,firefox,edge,safari,opera
+                                                IE)
+                6 Selenium can automation all webapplication
+                            except Angular JS web application ----> Protrator
+                            Except Desktop ----> Sikuli(Selenium 2)
+                            expect mobile ---->appium
+
+               Features of selenium
+               1 Open source and portable
+               2 It support the multiple langugae(python,java,c++,C#)
+               3 Combination of tools
+               4 easy to implement and easy to understand
+               5 Selenium support for automation means there no human effors
+               6 SUPPORT THE MULTIPLE LANGUAGE -->
+               7 SUPPORT THE MULTIPLE OS ---> MAC,LINUX,WINDOW
+               8 support the multiple browser
+               9 to the screen shots during execution
+
+
+              Limitations of selenium----->
+              1 No support for desktop
+              2 Maintance --hevey
+              3 No reporting capabability ---report generation
+                                ---> pytest
+                                ---> report
+                                --html='report.html'
+
+              4 Image testing /video testing - No
+                                            Matlab
+              5 Captcha
+              6 barcode
+              7 payment
+              8 Angular Js webapplication
+
+
+
+
+
+
+
+
+              from selenium import webdriver   # inter browser
+
+              webdriver.Fire()     ---- fire
+
+              get---->()
+
+
+            close() ----> is responsible to close the webdriver--but single driver--browser
+            all close ---> quite() ---responsbile to close the all the browsers jo automation
+
+
+            title----instant ----> give the title of webpage
+
+            driver.current_url ----current url of web page
+
+            current_url ---->
+             str1=https://stepupandlearn.in/admission-enquiry/
+
+             l1=str1.split('/')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             A - open
+             B - open
+             C - open
+             D- open
+
+             close() ---> which window close and what are open   - D and ABC
+             quite() ---> which window is close and what are open -All will close
+
+
+             https
+
+
+            .com
+
+
+
+
+
+
+
+
+get---->()
+
+Selenium  ---> open the url
+API   ----->
+            get() ------> retrive the data from sever
+Python -----> dict ---->
+    d1.get(key) ---- value
+                None
+                get(key,defaulvalue)----default value
+
+
+
+                nevigation in selenium
+
+                1 forword() ----> to forword
+                2 back() ---> to backword
+                3 refresh() ----> refresh page
+
+
+                driver.save_screenshot('filename.png')
+
+
+                obj1.switch_to.new_window('window')
+
+                window ---> new browser open
+                tab ----> on same browser new window will open
+
+
+
+                API --->
+
+                Authentication
+
+                get(url,auth=(usname,password))
+
+
+                url----> UI
+
+                with url we need to pass username and password
+
+
+                https://username:password@the-internet.herokuapp.com/basic_auth
+
+
+                https://username:password@url
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                webdriver----> browser---application
+
+
+                locator---->
+
+
+                1 id ----> unique in nature---> uniqueckly identitfication
+                        ---strong
+
+                2 class ----> multiple
+                        radio --->
+                        checkbox
+                        dropdown
+
+                3 name  ----> optional ---> name
+
+                type ='radio' name='male'
+                type ='radio' name='female'
+
+
+
+                4 linktext
+                            1 full linktext
+                            href---->
+                            full string ---href
+
+                            Register
+
+
+                            2 partial linktext
+                            substring---href
+                            Reg   or ster
+
+                5 css
+                customise css
+                tag and id
+                tag and class
+                tag and attribute
+
+
+                6 xpath ----> DOM document object model
+                        1 Absulute xpath
+                             full xpath---root node
+                             /html/body/div/div[1]/header/div[3]/div/div/div[6]/ul/li[4]/a
+
+                        2 relative xpath
+
+                        can start from middle
+                        //
+                        //*[@id="block_top_menu"]/ul/li[4]/a
+
+
+                        //tagname[@attribute,'value']
+
+
+                        //*[@attribute,'value']
+
+
+
+
+
+
+selenium3
+
+driver.find_element_by_id(value)   ----> return the single web element
+driver.find_element_by_css(value)
+driver.find_element_by_name(value)
+
+        ---> exception---element not found
+
+
+driver.find_elements_by_class(value)---> list of all web element
+        ----> []
+
+
+selenium4
+By -----> with By we can locate the element
+
+from selenium.webdriver.common.by import By
+
+driver.find_element(By.ID,'valueofID')
+driver.find_element(By.CSS,'valueof css')
+driver.find_element(By.NAME,'valueof NAME')
+driver.find_element(By.LINKTEXT,'valueof full linktext')
+driver.find_element(By.PARTIAL_LINK_TEXT,'valueof PARTIAL_LINK_TEXT linktext')
+driver.find_element(By.XPATH,'valueof XPATH')
+driver.find_elements(By.CLASS,'CLASSNAME')
+
+find_element ---> single web element
+
+find_elements----> list of all web element  --- []
+
+
+
+once we locate the element we method
+
+
+click()
+send_keys('hi')
+clear()
+
+
+is_displayed() ----> True else False
+is_clickable() --->True else False
+is_enabled()--True else False
+is_selected() --True else False
+
+
+xpath---->
+
+//tagname[@attribute='value']
+
+css
+
+tagname[attribute=value]
+
+
+when to use which locator??
+
+id
+class
+name
+linktext ----> other
+
+
+
+css or xpath ---> DOM
+
+xpath--->
+    absulate----can change
+    relative -----> *****
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+chropath
+
+selectorhub
+
+
+
+
+
+
+
+
+//button[@type="submit"]
+
+//button[@class="button-1 search-box-button"]
+
+//button[text()='Search']
+
+
+button-1 search-box-button
+
+
+
+
+
+
+
+
+
+
+
+and --condition in xpath
+
+
+day
+
+
+l1=[Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday]
+l1[0].click()
+l1[-1].click()
+
+
+submit() ---this responsible for enter key from keyboard
+
+
+//input[@id='sunday']
+Monday
+//input[@id='monday']
+Tuesday
+//input[@id='tuesday']
+Wednesday
+//input[@id='wednesday']
+Thursday
+//input[@id='thursday']
+Friday
+//input[@id='friday']
+Saturday
+//input[@id='saturday']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+time.sleep(2) -----> forced stop the code of execution
+
+
+
+WAITs---->
+
+
+1 implicit wait ----> used for all elements
+                ----> is used for webdriver / browser
+                driver.implicitly_wait(5)   ---> 5 for all element
+
+
+2 Explicit wait ---> used for specific element
+
+
+        present or not
+
+        from selenium.webdriver.support import expected_condition as EC
+        from selenium.webdriver.support.wait import WebDriverWait
+
+        WebDriverWait(driver,6)  ----> 6sec for perticular element
+
+
+
+        Select---dropdown
+
+        1 select_by_visible_text('text') ----> UI present
+
+        2 select_by_index(1)
+
+        [' ','Morning','Afternoon','Evening']
+
+        3 select_by_value('')
+
+
+
+
+
