@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.1 on darwin)" generated="2024-08-30T16:32:39.355547" rpa="false" schemaversion="5">
+<suite id="s1" name="Tescases" source="/Users/vaibhavbaviskar/PycharmProjects/API_Robot/tescases.robot">
+<test id="s1-t1" name="Verify test cases" line="6">
+<kw name="verify status code in api" owner="samplekeyword">
+<kw name="Get Api Status" owner="helper">
+<msg time="2024-08-30T16:32:39.532625" level="INFO">${status} = 200</msg>
+<var>${status}</var>
+<status status="PASS" start="2024-08-30T16:32:39.452752" elapsed="0.079971"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2024-08-30T16:32:39.533537" level="INFO">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;</msg>
+<arg>200</arg>
+<arg>${status}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2024-08-30T16:32:39.533103" elapsed="0.000581"/>
+</kw>
+<status status="PASS" start="2024-08-30T16:32:39.452052" elapsed="0.081808"/>
+</kw>
+<doc>verify status code</doc>
+<tag>p1</tag>
+<status status="PASS" start="2024-08-30T16:32:39.451270" elapsed="0.082947"/>
+</test>
+<status status="PASS" start="2024-08-30T16:32:39.357598" elapsed="0.177468"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">p1</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tescases">Tescases</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-30T16:32:39.450513" level="WARN">Imported library '/Users/vaibhavbaviskar/PycharmProjects/API_Robot/data.py' contains no keywords.</msg>
+</errors>
+</robot>

@@ -1,0 +1,30 @@
+
+
+12 faile 36 pass - 00:00:28
+
+paraller execution
+
+single working Unit ---cpu
+
+
+1 GW----> 10
+
+
+2 GW---20
+
+3 ---> 18
+
+
+
+pip install pytest-xdist
+
+
+-n 3
+
+-n 10
+
+-n auto
+
+
+
+add the loggers
