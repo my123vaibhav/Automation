@@ -1,0 +1,142 @@
+
+
+
+
+
+1 POPup ----> Alerts
+
+    can we handle windows popup with selenium ??
+
+
+        we can handle the webapplication popup?
+        OK --accept()
+        cancel--dismiss()
+
+        Confirmational ---->
+                    Accepted  Cancel
+        Informational ---->
+                    Accept
+        Input Alerts
+
+
+        switch_to.alert
+
+
+
+        Informational locator
+        //button[@onclick='jsAlert()']
+        //button[normalize-space()='Click for JS Alert']
+
+
+        Confirmation locator
+        //button[@onclick='jsConfirm()']
+        //button[normalize-space()='Click for JS Confirm']
+
+
+        //button[@onclick='jsPrompt()']
+        //button[normalize-space()='Click for JS Prompt']
+
+        //*[@id='result']
+
+
+
+
+
+
+
+'OK' in 'OK'
+
+
+2 How to handle multiple windows
+
+    window_handles ----> [list of all open windows - id]
+    driver.current_window_handle -- id of current window
+    driver.switch_to.window
+
+
+
+    PAGE A(P) ----> PAGE B ---> PAGE C ---> PAGE D
+
+    driver.window_handles
+            l1=[idA,idB,idC,idD]
+
+            for i in l1:
+                if idC==driver.current_window_handle:
+                    driver.switch_to.window
+
+
+
+
+   drop down --->
+        1 ALL --->
+        100 --->
+                Cisco
+                infosys
+                TCS
+                TTL
+                GSLAB
+                CALSOFT
+
+
+
+
+
+
+
+                COMPANIES KE NAME
+
+
+                101 tab open
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3 Drag and drop
+
+    1st locator
+
+    2nd locator
+
+    ActionChain
+
+4 Mause Over
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+json
+
+
+csv ----> common seprated value
+
+
+import csv
+
+

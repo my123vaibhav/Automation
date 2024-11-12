@@ -1,0 +1,145 @@
+#     0     1       2        3     4
+li = [10, 'N', "Nishant", None, 10.20]
+#     -5  -4     -3       -2     -1
+print(li[:])
+# print(li[::-1])
+print(li[::])
+print(li[::])
+print(li[::2])
+print(li[::-2])
+print(li[2:3:])
+print(li[2:3:1])
+print(li[3:2:-1])
+print(li[4:-4:-1])
+print(li[1:-1:1])
+print(li[-5:4:1])
+print(li[-5:4:-1])
+
+----------------------------
+C:\Python39\python.exe D:/pythonProject/API-Backend-Automation/PythonBasic/test.py
+[10, 'N', 'Nishant', None, 10.2]
+[10, 'N', 'Nishant', None, 10.2]
+[10, 'N', 'Nishant', None, 10.2]
+[10, 'Nishant', 10.2]
+[10.2, 'Nishant', 10]
+['Nishant']
+['Nishant']
+[None]
+[10.2, None, 'Nishant']
+['N', 'Nishant', None]
+[10, 'N', 'Nishant', None]
+[]
+
+Process finished with exit code 0
+-------------------------------------------
+Tuple study
+#     0     1       2        3     4
+li = (10, 'N', "Nishant", None, 10.20)
+#     -5  -4     -3       -2     -1
+print(li[:])
+# print(li[::-1])
+print(li[::])
+print(li[::])
+print(li[::2])
+print(li[::-2])
+print(li[2:3:])
+print(li[2:3:1])
+print(li[3:2:-1])
+print(li[4:-4:-1])
+print(li[1:-1:1])
+print(li[-5:4:1])
+print(li[-5:4:-1])
+
+--------------
+C:\Python39\python.exe D:/pythonProject/API-Backend-Automation/PythonBasic/test.py
+(10, 'N', 'Nishant', None, 10.2)
+(10, 'N', 'Nishant', None, 10.2)
+(10, 'N', 'Nishant', None, 10.2)
+(10, 'Nishant', 10.2)
+(10.2, 'Nishant', 10)
+('Nishant',)
+('Nishant',)
+(None,)
+(10.2, None, 'Nishant')
+('N', 'Nishant', None)
+(10, 'N', 'Nishant', None)
+()
+
+Process finished with exit code 0
+----------------------------
+dict:
+Days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}
+print(Days)
+print(type(Days))
+print("looping through the set elements ... ")
+for i in Days:
+    print(i)
+
+print("------------------------------DICT--------------------")
+di = {"Name": "Nishant", "Age": 27, "salary": 25000, "location": "Pune"}
+print(type(di))
+print(di)
+print(di['Age'])
+del (di['location'])
+print("After delete ", di)
+di['local'] = "boy"
+print("After adding :", di)
+di['local'] = "Girl"
+print("updating adding :", di)
+print("Keys are :", di.keys())
+print("value are :", di.values())
+print("Item are", di.items())
+# print("pop is",di.pop())
+dia = {}
+dia = di.copy()
+print("Copy is", dia)
+print("Get method is", di.get("Age"))
+# print("Update method is",di.update("A"))
+# print("after update:",di)
+--------------
+C:\Python39\python.exe D:/pythonProject/API-Backend-Automation/PythonBasic/test.py
+{'Friday', 'Thursday', 'Tuesday', 'Monday', 'Saturday', 'Sunday', 'Wednesday'}
+<class 'set'>
+looping through the set elements ... 
+Friday
+Thursday
+Tuesday
+Monday
+Saturday
+Sunday
+Wednesday
+------------------------------DICT--------------------
+<class 'dict'>
+{'Name': 'Nishant', 'Age': 27, 'salary': 25000, 'location': 'Pune'}
+27
+After delete  {'Name': 'Nishant', 'Age': 27, 'salary': 25000}
+After adding : {'Name': 'Nishant', 'Age': 27, 'salary': 25000, 'local': 'boy'}
+updating adding : {'Name': 'Nishant', 'Age': 27, 'salary': 25000, 'local': 'Girl'}
+Keys are : dict_keys(['Name', 'Age', 'salary', 'local'])
+value are : dict_values(['Nishant', 27, 25000, 'Girl'])
+Item are dict_items([('Name', 'Nishant'), ('Age', 27), ('salary', 25000), ('local', 'Girl')])
+Copy is {'Name': 'Nishant', 'Age': 27, 'salary': 25000, 'local': 'Girl'}
+Get method is 27
+
+Process 
+finished with exit code 0
+---------------------
+
+Lambda Functions:
+c = lambda a, b: a + b
+
+m = int(input("Enter the number:"))
+n = int(input("Enter the number:"))
+print(c(m, n))
+---------
+C:\Python39\python.exe D:/pythonProject/API-Backend-Automation/PythonBasic/test.py
+Enter the number:22
+Enter the number:23
+45
+
+Process finished with exit code 0
+
+----------------
+
+
+

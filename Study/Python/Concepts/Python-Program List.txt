@@ -1,0 +1,245 @@
+Python: 25 List Programming interview questions and answers
+Interview Question
+In this post, we will learn the 25 List Programming interview questions and answers.
+
+ 
+1.Program to find the max, min number from the list user input.
+listlang = []
+numbers = int(input('enter the number of items in list '))
+for num in range(numbers):
+    item = int(input('Entered number '))
+    listlang.append(item)
+print('entered list =',listlang)
+print("Max number = :", max(listlang), "\nMin number :", min(listlang))
+Output
+
+enter the number of items in list 4
+Entered number 12
+Entered number 34
+Entered number 45
+Entered number 67
+entered list = [12, 34, 45, 67]
+Max number = : 67 
+Min number : 12
+2. Code to remove duplicate from list using List comprehension 
+lstnum = [12, 36, 56, 36, 36, 50, 56, 12] 
+  
+unique_lst = [] 
+[unique_lst.append(ele) for ele in lstnum if ele not in unique_lst] 
+    
+print ("unique elements list  : " ,unique_lst)
+Output
+
+ 
+unique elements list  :  [12, 36, 56, 50]
+3. Program to find the sum of list elements.
+lstnum = [12, 36, 56, 36, 36, 50, 56, 12] 
+ 
+sum = 0
+ 
+for ele in range(0, len(lstnum)): 
+    sum = sum + lstnum[ele] 
+ 
+print ("sum of list items: " ,sum)
+Output
+
+sum of list items  :  294
+4. How to Multiply all the elements of list
+lstnum = [6, 2, 3, 1, 10, 4] 
+mutiply =1;
+for ele in lstnum:
+  mutiply =  mutiply* ele 
+ 
+print ("multiplication of list items  : " ,mutiply)
+Output
+
+ 
+multiplication of list items  :  1440
+5.Program to generate a number list between two ranges.
+listnum = list(range(1, 7))
+ 
+print ("list between two range : " ,listnum)
+Output
+
+ 
+list between two range :  [1, 2, 3, 4, 5, 6]
+6.How to reverse the List using slice
+listnum = [45,67,12,14,56,87]
+reverselist =listnum[::-1]
+print ("reverselist : " ,reverselist)
+Output
+
+reverselist :  [87, 56, 14, 12, 67, 45]
+7.How to flatten a list of lists with a list comprehension
+listnum = [[5,6,7,'C#'], ['C++',2,3]]
+ 
+flatten_list = [ele for sublist in listnum for ele in sublist]
+ 
+print('flatten list =',flatten_list)
+Output
+
+ 
+flatten list = [5, 6, 7, 'C#', 'C++', 2, 3]
+8.How to Intersect two list
+listnum = ['C++',2,3,6,7,5,'C#']
+listnum1 = ['C++',5,6,7,'C#']
+ 
+intersect_res = [item for item in listnum if item in listnum1]
+ 
+print('intersect of two list =',intersect_res)
+Output
+
+intersect of two list = ['C++', 6, 7, 5, 'C#']
+
+9.Program to shuffle a list and print
+from random import shuffle
+listnum = ['Rust','go','C++',2,3,6,7,5,'C#']
+ 
+shuffle(listnum)
+ 
+ 
+print('list after shuffling =',listnum)
+Output
+
+list after shuffling = [6, 5, 'go', 'C#', 2, 3, 'Rust', 7, 'C++']
+10. Program to convert a list into string
+listlang = ['This','is','list','Code']
+listtostring = ' '.join(listlang)
+ 
+print('list after shuffling =',listtostring)
+Output
+
+ 
+list after shuffling = This is list Code
+11.How to get the square of each list element between two range
+listnum = list(range(3,9))
+ 
+list_item_square = [ele ** 2 for ele in listnum]
+         
+print(list_item_square)
+Output
+
+[9, 16, 25, 36, 49, 64]
+12. Program to get the difference between two List using comprehension 
+lstnum = [15, 78, 4]
+lstnum1 = [80, 4, 89]
+ 
+two_list_differnce = [ele for ele in lstnum if ele not in lstnum1]
+ 
+ 
+print(two_list_differnce)
+Output
+
+
+[15, 78]
+13. How to count the number of list in list of list.
+lstlng = [[15, 78, 4],['C#',80,7],['Go','Rust','C++'],['Python',12]]
+ 
+print('count of list of list = ',len(lstlng))
+Output
+
+count of list of list =  4
+14. How to get the first element from each nested list of a list
+lstlng = [[15, 78, 4],['C#',80,7],['Go','Rust','C++'],['Python',12]]
+each_list_element = [item[0] for item in lstlng] 
+ 
+print('first element of each nested list  = ',each_list_element)
+Output
+
+
+first element of each nested list  =  [15, 'C#', 'Go', 'Python']
+15. How to count occurrence of repeated element in list
+from collections import Counter 
+lstlng = [15, 18, 14,'C#',18,15,'C#','C++','C++','Python',15]
+ 
+repeation_of_element  = Counter(lstlng) 
+print( repeation_of_element)
+Output
+
+Counter({15: 3, 18: 2, 'C#': 2, 'C++': 2, 14: 1, 'Python': 1})
+16. How to Filter even values from a list using list comprehension
+lstnum = [12, 18, 14,18,15,6]
+ 
+ 
+   
+even_element_list = [ele for ele in lstnum  if ele%2 == 0] 
+   
+ 
+print('even item list =',even_element_list)
+Output
+
+even item list = [12, 18, 14, 18, 6]
+17.How to Sort a list of integers in descending order
+lstnum = [12, 18, 14,25,15,6]
+ 
+lstnum.sort(reverse=True)  
+ 
+print('list sorting in descending order =',lstnum)
+Output
+
+list sorting in descending order = [25, 18, 15, 14, 12, 6]
+18.How to Sort a list of integers in ascending order
+sort() method used to sort the list in ascending order.
+
+lstnum = [12, 18, 14,25,15,6]
+ 
+lstnum.sort()  
+ 
+print('list sorting in ascending order =',lstnum)
+Output
+
+list sorting in ascending order = [6, 12, 14, 15, 18, 25]
+19. How to remove elements in a list before a specific index
+lstnum = [12, 18, 14,25,15,6]
+ 
+new_list = lstnum[4:]
+ 
+print('removinfg  element before specific Index =' ,new_list)
+Output
+
+removing  element before specific Index = [15, 6]
+20.How to remove empty strings from the list of strings
+liststr = ["Python", "", "list", "first", "", "example"]
+ 
+lstafter_remove_empty = list(filter(None, liststr))
+ 
+print(lstafter_remove_empty)
+Output
+
+['Python', 'list', 'first', 'example']
+21.How to sort two lists simultaneously 
+lstnum = [ 5,2, 1, 7,26]
+lstnum1 = [45,35, 78, 80, 100]
+ 
+lstnum, lstnum1 = zip(*sorted(zip(lstnum, lstnum1)))
+print(lstnum, lstnum1)
+Output
+
+(1, 2, 5, 7, 26) (78, 35, 45, 80, 100)
+23.How to concatenate two list element wise/index-wise.
+lststr = ["th", "i", "Pyth", "exa"] 
+lststr1 = ["is", "s", "on", "mple"]
+concate_list = [i + j for i, j in zip(lststr, lststr1)]
+print('concatenated list = ',concate_list)
+Output
+
+concatenated list =  ['this', 'is', 'Python', 'example']
+24. How to concatenate every element across lists using list comprehension 
+lststr = ["this",  "Python"] 
+lststr1 = ["is", "example", "of"]
+templst = [(x, y) for x in lststr for y in lststr1] 
+   
+concate_list = [x + ' ' + y for (x, y) in templst] 
+ 
+print('concatenated list = ',concate_list)
+Output
+
+concatenated list =  ['this is', 'this example', 'this of', 'Python is', 'Python example', 'Python of']
+25.How to remove negative values from a list with the filter function
+lstnum = [-5, 27, 1000, -4, 0, -80,56,-67]
+//Removing negative values
+res_lst = [item for item in lstnum if item >= 0] 
+print('list after removing negative values =',res_lst)
+Output
+
+list after removing negative values = [27, 1000, 0, 56]
