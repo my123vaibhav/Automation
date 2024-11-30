@@ -8,6 +8,7 @@ def test_resp_code_204():
     resp=requests.delete(delete_api_dict['user_delete'])
     assert resp.status_code==204,'failed due to status'
 
+#my
 @pytest.mark.order(1)
 def test_resp_code_200():
     resp=requests.delete(delete_api_dict['user_delete'])
