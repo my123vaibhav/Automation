@@ -1,0 +1,194 @@
+2025-07-13 13:24:23,222 - INFO - this is starting of tc
+2025-07-13 13:24:23,223 - INFO - api is https://reqres.in/api/users?page=2
+2025-07-13 13:24:23,223 - INFO - api is : https://reqres.in/api/users?page=2
+2025-07-13 13:24:23,224 - INFO - object is created for request helper
+2025-07-13 13:24:23,312 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:23,312 - INFO - status code is : 200
+2025-07-13 13:24:23,313 - INFO - actual status code is :200
+2025-07-13 13:24:23,313 - DEBUG - status is match
+2025-07-13 13:24:23,313 - INFO - api is : https://reqres.in/api/users?page=2
+2025-07-13 13:24:23,381 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:23,381 - INFO - resp is : {'page': 2, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 7, 'email': 'michael.lawson@reqres.in', 'first_name': 'Michael', 'last_name': 'Lawson', 'avatar': 'https://reqres.in/img/faces/7-image.jpg'}, {'id': 8, 'email': 'lindsay.ferguson@reqres.in', 'first_name': 'Lindsay', 'last_name': 'Ferguson', 'avatar': 'https://reqres.in/img/faces/8-image.jpg'}, {'id': 9, 'email': 'tobias.funke@reqres.in', 'first_name': 'Tobias', 'last_name': 'Funke', 'avatar': 'https://reqres.in/img/faces/9-image.jpg'}, {'id': 10, 'email': 'byron.fields@reqres.in', 'first_name': 'Byron', 'last_name': 'Fields', 'avatar': 'https://reqres.in/img/faces/10-image.jpg'}, {'id': 11, 'email': 'george.edwards@reqres.in', 'first_name': 'George', 'last_name': 'Edwards', 'avatar': 'https://reqres.in/img/faces/11-image.jpg'}, {'id': 12, 'email': 'rachel.howell@reqres.in', 'first_name': 'Rachel', 'last_name': 'Howell', 'avatar': 'https://reqres.in/img/faces/12-image.jpg'}], 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:23,381 - INFO - response is :{'page': 2, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 7, 'email': 'michael.lawson@reqres.in', 'first_name': 'Michael', 'last_name': 'Lawson', 'avatar': 'https://reqres.in/img/faces/7-image.jpg'}, {'id': 8, 'email': 'lindsay.ferguson@reqres.in', 'first_name': 'Lindsay', 'last_name': 'Ferguson', 'avatar': 'https://reqres.in/img/faces/8-image.jpg'}, {'id': 9, 'email': 'tobias.funke@reqres.in', 'first_name': 'Tobias', 'last_name': 'Funke', 'avatar': 'https://reqres.in/img/faces/9-image.jpg'}, {'id': 10, 'email': 'byron.fields@reqres.in', 'first_name': 'Byron', 'last_name': 'Fields', 'avatar': 'https://reqres.in/img/faces/10-image.jpg'}, {'id': 11, 'email': 'george.edwards@reqres.in', 'first_name': 'George', 'last_name': 'Edwards', 'avatar': 'https://reqres.in/img/faces/11-image.jpg'}, {'id': 12, 'email': 'rachel.howell@reqres.in', 'first_name': 'Rachel', 'last_name': 'Howell', 'avatar': 'https://reqres.in/img/faces/12-image.jpg'}], 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:23,385 - INFO - api is : https://reqres.in/api/users
+2025-07-13 13:24:23,385 - INFO - payload is {"name": "morpheus", "job": "leader"}
+2025-07-13 13:24:23,749 - INFO - response of api : <Response [201]>
+2025-07-13 13:24:23,749 - INFO - response of api : 201
+2025-07-13 13:24:23,750 - INFO - status is match
+2025-07-13 13:24:23,750 - INFO - payload is {"name": "morpheus", "job": "leader"}
+2025-07-13 13:24:24,273 - INFO - response of api : <Response [201]>
+2025-07-13 13:24:24,274 - INFO - response of api : b'{"name":"morpheus","job":"leader","id":"69","createdAt":"2025-07-13T07:54:24.266Z"}'
+2025-07-13 13:24:24,279 - INFO - createdAt is present
+2025-07-13 13:24:24,279 - INFO - current time is 2025-07-13 13:24:24.279800
+2025-07-13 13:24:24,279 - INFO - current time match
+2025-07-13 13:24:24,283 - INFO - api is : https://reqres.in/api/users/2
+2025-07-13 13:24:24,283 - INFO - payload is :{"name": "morpheus", "job": "zion resident"}
+2025-07-13 13:24:24,640 - INFO - response is : <Response [200]>
+2025-07-13 13:24:24,643 - INFO - statuscode validation done
+2025-07-13 13:24:24,646 - INFO - payload is :{"name": "morpheus", "job": "zion resident"}
+2025-07-13 13:24:24,989 - INFO - response is : <Response [200]>
+2025-07-13 13:24:24,990 - INFO - updatedAt is validated successfully
+2025-07-13 13:24:24,994 - INFO - api is : https://reqres.in/api/users/99999
+2025-07-13 13:24:25,339 - INFO - response is : <Response [204]>
+2025-07-13 13:24:25,340 - INFO - status code validation done
+2025-07-13 13:24:25,340 - INFO - response validation done
+2025-07-13 13:24:25,346 - INFO - this is starting of tc
+2025-07-13 13:24:25,346 - INFO - api is :https://reqres.in/api/users?page=2
+2025-07-13 13:24:25,346 - INFO - api is : https://reqres.in/api/users?page=2
+2025-07-13 13:24:25,719 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:25,726 - INFO - resp is : {'page': 2, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 7, 'email': 'michael.lawson@reqres.in', 'first_name': 'Michael', 'last_name': 'Lawson', 'avatar': 'https://reqres.in/img/faces/7-image.jpg'}, {'id': 8, 'email': 'lindsay.ferguson@reqres.in', 'first_name': 'Lindsay', 'last_name': 'Ferguson', 'avatar': 'https://reqres.in/img/faces/8-image.jpg'}, {'id': 9, 'email': 'tobias.funke@reqres.in', 'first_name': 'Tobias', 'last_name': 'Funke', 'avatar': 'https://reqres.in/img/faces/9-image.jpg'}, {'id': 10, 'email': 'byron.fields@reqres.in', 'first_name': 'Byron', 'last_name': 'Fields', 'avatar': 'https://reqres.in/img/faces/10-image.jpg'}, {'id': 11, 'email': 'george.edwards@reqres.in', 'first_name': 'George', 'last_name': 'Edwards', 'avatar': 'https://reqres.in/img/faces/11-image.jpg'}, {'id': 12, 'email': 'rachel.howell@reqres.in', 'first_name': 'Rachel', 'last_name': 'Howell', 'avatar': 'https://reqres.in/img/faces/12-image.jpg'}], 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:25,727 - INFO - response is :{'page': 2, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 7, 'email': 'michael.lawson@reqres.in', 'first_name': 'Michael', 'last_name': 'Lawson', 'avatar': 'https://reqres.in/img/faces/7-image.jpg'}, {'id': 8, 'email': 'lindsay.ferguson@reqres.in', 'first_name': 'Lindsay', 'last_name': 'Ferguson', 'avatar': 'https://reqres.in/img/faces/8-image.jpg'}, {'id': 9, 'email': 'tobias.funke@reqres.in', 'first_name': 'Tobias', 'last_name': 'Funke', 'avatar': 'https://reqres.in/img/faces/9-image.jpg'}, {'id': 10, 'email': 'byron.fields@reqres.in', 'first_name': 'Byron', 'last_name': 'Fields', 'avatar': 'https://reqres.in/img/faces/10-image.jpg'}, {'id': 11, 'email': 'george.edwards@reqres.in', 'first_name': 'George', 'last_name': 'Edwards', 'avatar': 'https://reqres.in/img/faces/11-image.jpg'}, {'id': 12, 'email': 'rachel.howell@reqres.in', 'first_name': 'Rachel', 'last_name': 'Howell', 'avatar': 'https://reqres.in/img/faces/12-image.jpg'}], 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:25,733 - INFO - api is : https://reqres.in/api/users
+2025-07-13 13:24:25,734 - ERROR - error : Object of type set is not JSON serializable
+2025-07-13 13:24:25,806 - INFO - api is : https://reqres.in/api/users/2
+2025-07-13 13:24:25,806 - INFO - payload is :{"job": "zion resident"}
+2025-07-13 13:24:26,122 - INFO - response is : <Response [200]>
+2025-07-13 13:24:26,123 - INFO - statuscode validation done
+2025-07-13 13:24:26,123 - INFO - payload is :{"job": "zion resident"}
+2025-07-13 13:24:26,681 - INFO - response is : <Response [200]>
+2025-07-13 13:24:26,682 - INFO - updatedAt is validated successfully
+2025-07-13 13:24:26,685 - INFO - api is : https://reqres.in/api/users/2
+2025-07-13 13:24:27,023 - INFO - response is : <Response [204]>
+2025-07-13 13:24:27,023 - INFO - status code validation done
+2025-07-13 13:24:27,035 - INFO - api is : https://reqres.in/api/users/2
+2025-07-13 13:24:27,035 - INFO - object is created for request helper
+2025-07-13 13:24:27,096 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:27,097 - INFO - status code is : 200
+2025-07-13 13:24:27,097 - INFO - actual status code is :200
+2025-07-13 13:24:27,098 - DEBUG - status is match
+2025-07-13 13:24:27,100 - INFO - api is : https://reqres.in/api/register
+2025-07-13 13:24:27,101 - INFO - payload is {"email": "eve.holt@reqres.in", "password": "pistol"}
+2025-07-13 13:24:27,441 - INFO - response of api : <Response [200]>
+2025-07-13 13:24:27,441 - INFO - response of api : 200
+2025-07-13 13:24:27,442 - INFO - status code match
+2025-07-13 13:24:27,442 - INFO - payload is {"email": "eve.holt@reqres.in", "password": "pistol"}
+2025-07-13 13:24:27,759 - INFO - response of api : <Response [200]>
+2025-07-13 13:24:27,760 - INFO - response of api : b'{"id":4,"token":"QpwL5tke4Pnpja7X4"}'
+2025-07-13 13:24:27,760 - INFO - token is available
+2025-07-13 13:24:27,764 - INFO - api is : https://reqres.in/api/users/2
+2025-07-13 13:24:28,093 - INFO - response is : <Response [204]>
+2025-07-13 13:24:28,093 - INFO - response validation done
+2025-07-13 13:24:28,099 - INFO - api is : https://reqres.in/api/users/3
+2025-07-13 13:24:28,099 - INFO - object is created for request helper
+2025-07-13 13:24:28,174 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:28,174 - INFO - status code is : 200
+2025-07-13 13:24:28,176 - INFO - actual status code is :200
+2025-07-13 13:24:28,176 - DEBUG - status is match
+2025-07-13 13:24:28,182 - INFO - api is : https://reqres.in/api/register
+2025-07-13 13:24:28,184 - INFO - payload is {"email": "eve.holt@reqres.in"}
+2025-07-13 13:24:28,497 - INFO - response of api : <Response [400]>
+2025-07-13 13:24:28,497 - INFO - response of api : 400
+2025-07-13 13:24:28,497 - INFO - status code match
+2025-07-13 13:24:28,498 - INFO - payload is {"email": "eve.holt@reqres.in"}
+2025-07-13 13:24:28,832 - INFO - response of api : <Response [400]>
+2025-07-13 13:24:28,833 - INFO - response of api : b'{"error":"Missing password"}'
+2025-07-13 13:24:28,834 - INFO - Missing password validated
+2025-07-13 13:24:28,838 - INFO - api is : https://reqres.in/api/users/4
+2025-07-13 13:24:28,838 - INFO - object is created for request helper
+2025-07-13 13:24:29,191 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:29,191 - INFO - status code is : 200
+2025-07-13 13:24:29,192 - INFO - actual status code is :200
+2025-07-13 13:24:29,192 - DEBUG - status is match
+2025-07-13 13:24:29,196 - INFO - api is : https://reqres.in/api/register
+2025-07-13 13:24:29,196 - INFO - payload is {"password": "pistol"}
+2025-07-13 13:24:29,562 - INFO - response of api : <Response [400]>
+2025-07-13 13:24:29,563 - INFO - response of api : 400
+2025-07-13 13:24:29,563 - INFO - status code match
+2025-07-13 13:24:29,563 - INFO - payload is {"password": "pistol"}
+2025-07-13 13:24:29,890 - INFO - response of api : <Response [400]>
+2025-07-13 13:24:29,890 - INFO - response of api : b'{"error":"Missing email or username"}'
+2025-07-13 13:24:29,891 - INFO - Missing email validated
+2025-07-13 13:24:29,893 - INFO - api is : https://reqres.in/api/users?page=2
+2025-07-13 13:24:29,964 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:29,964 - INFO - resp is : {'page': 2, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 7, 'email': 'michael.lawson@reqres.in', 'first_name': 'Michael', 'last_name': 'Lawson', 'avatar': 'https://reqres.in/img/faces/7-image.jpg'}, {'id': 8, 'email': 'lindsay.ferguson@reqres.in', 'first_name': 'Lindsay', 'last_name': 'Ferguson', 'avatar': 'https://reqres.in/img/faces/8-image.jpg'}, {'id': 9, 'email': 'tobias.funke@reqres.in', 'first_name': 'Tobias', 'last_name': 'Funke', 'avatar': 'https://reqres.in/img/faces/9-image.jpg'}, {'id': 10, 'email': 'byron.fields@reqres.in', 'first_name': 'Byron', 'last_name': 'Fields', 'avatar': 'https://reqres.in/img/faces/10-image.jpg'}, {'id': 11, 'email': 'george.edwards@reqres.in', 'first_name': 'George', 'last_name': 'Edwards', 'avatar': 'https://reqres.in/img/faces/11-image.jpg'}, {'id': 12, 'email': 'rachel.howell@reqres.in', 'first_name': 'Rachel', 'last_name': 'Howell', 'avatar': 'https://reqres.in/img/faces/12-image.jpg'}], 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:29,965 - INFO - response is :{'page': 2, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 7, 'email': 'michael.lawson@reqres.in', 'first_name': 'Michael', 'last_name': 'Lawson', 'avatar': 'https://reqres.in/img/faces/7-image.jpg'}, {'id': 8, 'email': 'lindsay.ferguson@reqres.in', 'first_name': 'Lindsay', 'last_name': 'Ferguson', 'avatar': 'https://reqres.in/img/faces/8-image.jpg'}, {'id': 9, 'email': 'tobias.funke@reqres.in', 'first_name': 'Tobias', 'last_name': 'Funke', 'avatar': 'https://reqres.in/img/faces/9-image.jpg'}, {'id': 10, 'email': 'byron.fields@reqres.in', 'first_name': 'Byron', 'last_name': 'Fields', 'avatar': 'https://reqres.in/img/faces/10-image.jpg'}, {'id': 11, 'email': 'george.edwards@reqres.in', 'first_name': 'George', 'last_name': 'Edwards', 'avatar': 'https://reqres.in/img/faces/11-image.jpg'}, {'id': 12, 'email': 'rachel.howell@reqres.in', 'first_name': 'Rachel', 'last_name': 'Howell', 'avatar': 'https://reqres.in/img/faces/12-image.jpg'}], 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:29,970 - INFO - api is : https://reqres.in/api/login
+2025-07-13 13:24:29,970 - INFO - payload is {"email": "eve.holt@reqres.in", "password": "cityslicka"}
+2025-07-13 13:24:30,316 - INFO - response of api : <Response [200]>
+2025-07-13 13:24:30,317 - INFO - response of api : 200
+2025-07-13 13:24:30,318 - INFO - status code match
+2025-07-13 13:24:30,318 - INFO - payload is {"email": "eve.holt@reqres.in", "password": "cityslicka"}
+2025-07-13 13:24:30,681 - INFO - response of api : <Response [200]>
+2025-07-13 13:24:30,681 - INFO - response of api : b'{"token":"QpwL5tke4Pnpja7X4"}'
+2025-07-13 13:24:30,681 - INFO - token is available
+2025-07-13 13:24:30,691 - INFO - api is : https://reqres.in/api/users?page=2
+2025-07-13 13:24:30,859 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:30,860 - INFO - resp is : {'page': 2, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 7, 'email': 'michael.lawson@reqres.in', 'first_name': 'Michael', 'last_name': 'Lawson', 'avatar': 'https://reqres.in/img/faces/7-image.jpg'}, {'id': 8, 'email': 'lindsay.ferguson@reqres.in', 'first_name': 'Lindsay', 'last_name': 'Ferguson', 'avatar': 'https://reqres.in/img/faces/8-image.jpg'}, {'id': 9, 'email': 'tobias.funke@reqres.in', 'first_name': 'Tobias', 'last_name': 'Funke', 'avatar': 'https://reqres.in/img/faces/9-image.jpg'}, {'id': 10, 'email': 'byron.fields@reqres.in', 'first_name': 'Byron', 'last_name': 'Fields', 'avatar': 'https://reqres.in/img/faces/10-image.jpg'}, {'id': 11, 'email': 'george.edwards@reqres.in', 'first_name': 'George', 'last_name': 'Edwards', 'avatar': 'https://reqres.in/img/faces/11-image.jpg'}, {'id': 12, 'email': 'rachel.howell@reqres.in', 'first_name': 'Rachel', 'last_name': 'Howell', 'avatar': 'https://reqres.in/img/faces/12-image.jpg'}], 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:30,863 - INFO - response is :{'page': 2, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 7, 'email': 'michael.lawson@reqres.in', 'first_name': 'Michael', 'last_name': 'Lawson', 'avatar': 'https://reqres.in/img/faces/7-image.jpg'}, {'id': 8, 'email': 'lindsay.ferguson@reqres.in', 'first_name': 'Lindsay', 'last_name': 'Ferguson', 'avatar': 'https://reqres.in/img/faces/8-image.jpg'}, {'id': 9, 'email': 'tobias.funke@reqres.in', 'first_name': 'Tobias', 'last_name': 'Funke', 'avatar': 'https://reqres.in/img/faces/9-image.jpg'}, {'id': 10, 'email': 'byron.fields@reqres.in', 'first_name': 'Byron', 'last_name': 'Fields', 'avatar': 'https://reqres.in/img/faces/10-image.jpg'}, {'id': 11, 'email': 'george.edwards@reqres.in', 'first_name': 'George', 'last_name': 'Edwards', 'avatar': 'https://reqres.in/img/faces/11-image.jpg'}, {'id': 12, 'email': 'rachel.howell@reqres.in', 'first_name': 'Rachel', 'last_name': 'Howell', 'avatar': 'https://reqres.in/img/faces/12-image.jpg'}], 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:30,879 - INFO - api is : https://reqres.in/api/login
+2025-07-13 13:24:30,881 - INFO - payload is {"email": "eve.holt@reqres.in"}
+2025-07-13 13:24:31,218 - INFO - response of api : <Response [400]>
+2025-07-13 13:24:31,218 - INFO - response of api : 400
+2025-07-13 13:24:31,219 - INFO - status code match
+2025-07-13 13:24:31,219 - INFO - payload is {"email": "eve.holt@reqres.in"}
+2025-07-13 13:24:31,535 - INFO - response of api : <Response [400]>
+2025-07-13 13:24:31,536 - INFO - response of api : b'{"error":"Missing password"}'
+2025-07-13 13:24:31,536 - INFO - validation done
+2025-07-13 13:24:31,539 - INFO - api is : https://reqres.in/api/unknown
+2025-07-13 13:24:31,540 - INFO - object is created for request helper
+2025-07-13 13:24:31,866 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:31,871 - INFO - status code is : 200
+2025-07-13 13:24:31,871 - INFO - actual status code is :200
+2025-07-13 13:24:31,872 - DEBUG - status is match
+2025-07-13 13:24:31,874 - INFO - api is : https://reqres.in/api/login
+2025-07-13 13:24:31,874 - INFO - payload is {}
+2025-07-13 13:24:32,210 - INFO - response of api : <Response [400]>
+2025-07-13 13:24:32,213 - INFO - response of api : 400
+2025-07-13 13:24:32,213 - INFO - status code match
+2025-07-13 13:24:32,213 - INFO - payload is {}
+2025-07-13 13:24:32,532 - INFO - response of api : <Response [400]>
+2025-07-13 13:24:32,533 - INFO - response of api : b'{"error":"Missing email or username"}'
+2025-07-13 13:24:32,533 - INFO - validation done
+2025-07-13 13:24:32,535 - INFO - api is : https://reqres.in/api/unknown/{}
+2025-07-13 13:24:32,535 - INFO - object is created for request helper
+2025-07-13 13:24:32,870 - INFO - resp is : <Response [404]>
+2025-07-13 13:24:32,870 - INFO - status code is : 404
+2025-07-13 13:24:32,875 - INFO - actual status code is :404
+2025-07-13 13:24:32,914 - INFO - api is : https://reqres.in/api/unknown/2
+2025-07-13 13:24:33,252 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:33,252 - INFO - resp is : {'data': {'id': 2, 'name': 'fuchsia rose', 'year': 2001, 'color': '#C74375', 'pantone_value': '17-2031'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:33,252 - INFO - response is :{'data': {'id': 2, 'name': 'fuchsia rose', 'year': 2001, 'color': '#C74375', 'pantone_value': '17-2031'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:33,253 - INFO - api is : https://reqres.in/api/unknown/3
+2025-07-13 13:24:33,613 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:33,614 - INFO - resp is : {'data': {'id': 3, 'name': 'true red', 'year': 2002, 'color': '#BF1932', 'pantone_value': '19-1664'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:33,614 - INFO - response is :{'data': {'id': 3, 'name': 'true red', 'year': 2002, 'color': '#BF1932', 'pantone_value': '19-1664'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:33,617 - INFO - api is : https://reqres.in/api/unknown/2
+2025-07-13 13:24:33,983 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:33,983 - INFO - resp is : {'data': {'id': 2, 'name': 'fuchsia rose', 'year': 2001, 'color': '#C74375', 'pantone_value': '17-2031'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:33,983 - INFO - response is :{'data': {'id': 2, 'name': 'fuchsia rose', 'year': 2001, 'color': '#C74375', 'pantone_value': '17-2031'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:33,992 - INFO - api is : https://reqres.in/api/unknown/3
+2025-07-13 13:24:34,839 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:34,839 - INFO - resp is : {'data': {'id': 3, 'name': 'true red', 'year': 2002, 'color': '#BF1932', 'pantone_value': '19-1664'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:34,839 - INFO - response is :{'data': {'id': 3, 'name': 'true red', 'year': 2002, 'color': '#BF1932', 'pantone_value': '19-1664'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:34,841 - INFO - api is : https://reqres.in/api/unknown/4
+2025-07-13 13:24:35,171 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:35,171 - INFO - resp is : {'data': {'id': 4, 'name': 'aqua sky', 'year': 2003, 'color': '#7BC4C4', 'pantone_value': '14-4811'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:35,172 - INFO - response is :{'data': {'id': 4, 'name': 'aqua sky', 'year': 2003, 'color': '#7BC4C4', 'pantone_value': '14-4811'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:35,174 - INFO - api is : https://reqres.in/api/unknown/5
+2025-07-13 13:24:35,718 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:35,718 - INFO - resp is : {'data': {'id': 5, 'name': 'tigerlily', 'year': 2004, 'color': '#E2583E', 'pantone_value': '17-1456'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:35,722 - INFO - response is :{'data': {'id': 5, 'name': 'tigerlily', 'year': 2004, 'color': '#E2583E', 'pantone_value': '17-1456'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:35,739 - INFO - api is : https://reqres.in/api/unknown/6
+2025-07-13 13:24:36,083 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:36,083 - INFO - resp is : {'data': {'id': 6, 'name': 'blue turquoise', 'year': 2005, 'color': '#53B0AE', 'pantone_value': '15-5217'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:36,084 - INFO - response is :{'data': {'id': 6, 'name': 'blue turquoise', 'year': 2005, 'color': '#53B0AE', 'pantone_value': '15-5217'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:36,085 - INFO - api is : https://reqres.in/api/unknown/7
+2025-07-13 13:24:36,440 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:36,441 - INFO - resp is : {'data': {'id': 7, 'name': 'sand dollar', 'year': 2006, 'color': '#DECDBE', 'pantone_value': '13-1106'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:36,441 - INFO - response is :{'data': {'id': 7, 'name': 'sand dollar', 'year': 2006, 'color': '#DECDBE', 'pantone_value': '13-1106'}, 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}
+2025-07-13 13:24:36,446 - INFO - api is : https://reqres.in/api/unknown/23
+2025-07-13 13:24:36,776 - INFO - resp is : <Response [404]>
+2025-07-13 13:24:36,780 - INFO - status code is : 404
+2025-07-13 13:24:37,105 - INFO - resp is : <Response [404]>
+2025-07-13 13:24:37,105 - INFO - resp is : {}
+2025-07-13 13:24:37,113 - INFO - api is : https://reqres.in/api/users?delay=3
+2025-07-13 13:24:40,442 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:40,444 - INFO - time taken  is : 3.326068
+2025-07-13 13:24:40,449 - INFO - api is : https://reqres.in/api/users?delay=abc
+2025-07-13 13:24:40,790 - INFO - resp is : <Response [200]>
+2025-07-13 13:24:40,791 - INFO - time taken  is : 0.33936
+2025-07-13 13:24:40,792 - INFO - api is : https://reqres.in/api/unknown/abc
+2025-07-13 13:24:41,140 - INFO - resp is : <Response [404]>
+2025-07-13 13:24:41,140 - INFO - status code is : 404
+2025-07-13 13:24:41,466 - INFO - resp is : <Response [404]>
+2025-07-13 13:24:41,467 - INFO - resp is : {}
